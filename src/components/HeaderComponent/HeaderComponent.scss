@@ -1,0 +1,17 @@
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: rgba(103, 174, 252, 1);
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 766px;
+  }
+}

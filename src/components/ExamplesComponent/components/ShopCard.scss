@@ -1,0 +1,15 @@
+.shopCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 560px;
+  height: 450px;
+
+  transition: 300ms;
+
+  &:hover {
+    background-image: url(../../../media/examplesImages/backGroundImage.png);
+  }
+}

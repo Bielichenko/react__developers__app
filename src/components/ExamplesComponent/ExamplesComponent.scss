@@ -1,0 +1,18 @@
+.examples{
+  position: relative;
+
+  background-color: rgba(218, 236, 255, 1);
+
+  &__shops {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--wave {
+      top: 0;
+    }
+  }
+}

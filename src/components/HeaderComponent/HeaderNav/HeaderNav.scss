@@ -1,0 +1,9 @@
+.header {
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    list-style-type: none;
+  }
+}

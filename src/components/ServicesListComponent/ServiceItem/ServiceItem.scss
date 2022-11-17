@@ -1,0 +1,15 @@
+.serviceItem {
+  &__top {
+    display: flex;
+  }
+
+  &__description {
+    display: flex;
+
+    padding: 10px;
+
+    &__image {
+      // width: 10px;
+    }
+  }
+}
