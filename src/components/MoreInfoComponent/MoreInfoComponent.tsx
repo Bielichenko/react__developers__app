@@ -1,3 +1,4 @@
+/* eslint-disable jsx-quotes */
 import React from 'react';
 
 import './MoreInfoComponent.scss';
@@ -22,11 +23,14 @@ export const MoreInfoComponent = () => {
       <button type="button" className="moreInfo__transferToOrder button">
         Оставить заявку
       </button>
-      {/* <img src="src/media/moreInfoImages/clock.png" alt="" /> */}
-
-      <img src="media/examplesImages/sphere.png" alt="" />
-
-      <img src="media/examplesImages/sphere2.png" alt="" />
+      <img src="media/moreInfoImages/clock.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/cylinder.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/order.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/sphere--big.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/sphere--purple.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/sphere--small.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/taper.png" className='moreInfo__image image' alt="" />
+      <img src="media/moreInfoImages/wave.png" className='moreInfo__image image' alt="" />
     </div>
   );
 };

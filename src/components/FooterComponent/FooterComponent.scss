@@ -1,0 +1,27 @@
+.footer {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  background-color: rgba(100, 171, 249, 1);
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__convention{
+    width: max-content;
+    margin: auto;
+  }
+}
+
+
+
+.viberContacts {
+  &__item {
+    display: flex;
+  }
+}
