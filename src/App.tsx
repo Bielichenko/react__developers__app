@@ -14,13 +14,13 @@ import './App.scss';
 export const App: React.FC = () => {
   return (
     <div className="app">
-      {/* <HeaderComponent />
+      {/* <HeaderComponent /> */}
       <ServicesListComponent />
-      <DevelopmentStagesComponent />
+      {/* <DevelopmentStagesComponent />
       <ExamplesComponent />
       <MoreInfoComponent />
-      <OrderComponent /> */}
-      <FooterComponent />
+      <OrderComponent />
+      <FooterComponent /> */}
     </div>
   );
 };

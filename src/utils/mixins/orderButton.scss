@@ -1,0 +1,11 @@
+@mixin orderButton {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #75E169;
+  border-radius: 5px;
+}

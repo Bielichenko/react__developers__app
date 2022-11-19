@@ -1,0 +1,46 @@
+.logo {
+  position: relative;
+
+  width: 195px;
+  height: 58px;
+
+  &__item {
+    position: absolute;
+
+    height: 46px;
+    width: 42px;
+
+    &--left {
+      top: 0;
+      left: 0;
+      
+      padding: 6px 18px 6px 7px;
+      
+      background-image: url(../../media/logoImages/back--left.png);
+    }
+
+    &--right {
+      top: 10px;
+      left: 30px;
+
+      padding: 6px 7px 6px 18px;
+
+      background-image: url(../../media/logoImages/back--right.png);
+    }
+
+    &__arrow {
+      height: 34px;
+      width: 17px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+
+    color: white;
+    // font-weight: 700;
+    text-transform: uppercase;
+  }
+}

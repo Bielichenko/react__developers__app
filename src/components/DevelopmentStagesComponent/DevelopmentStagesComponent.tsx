@@ -9,7 +9,7 @@ import { stages } from './stages';
 
 export const DevelopmentStagesComponent = () => {
   return (
-    <div className="developmentStages">
+    <div className="developmentStages" id="stages">
       <h2 className="developmentStages__title">
         Этапы разработки интернет-магазина
       </h2>

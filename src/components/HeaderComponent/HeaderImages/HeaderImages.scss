@@ -1,0 +1,96 @@
+.headerImages {
+  &__ellipse {
+    position: absolute;
+
+    &--blue {
+      top: 82px;
+      right: 0;
+
+      height: 550px;
+    }
+
+    &--white {
+      bottom: 41px;
+      left: 0;
+
+      height: 185px;
+    }
+  }
+
+  &__cart {
+    position: absolute;
+    top: 111px;
+    right: 305px;
+
+    height: 499px;
+  }
+
+  &__sphere {
+    position: absolute;
+
+    &--blue {
+      top: 350px;
+      right: 249px;
+
+      height: 58px;
+
+      &--left {
+        top: 120px;
+        left: 100px;
+
+        height: 53px;
+      }
+    }
+
+    &--purple {
+      top: 300px;
+      right: 171px;
+
+      height: 37px;
+    }
+  }
+
+  &__wave {
+    position: absolute;
+
+    &--blue {
+      z-index: -1;
+      top: 370px;
+      right: 660px;
+
+      height: 70px;
+    }
+
+    &--purple {
+      top: 240px;
+      right: 220px;
+
+      height: 81px;
+
+      &--left {
+        top: 608px;
+        left: 65px;
+
+        height: 63px;
+      }
+    }
+  }
+
+  &__cylinder {
+    position: absolute;
+
+    &--blue {
+      top: 92px;
+      right: 530px;
+
+      height: 57px;
+    }
+
+    &--pink {
+      bottom: 106px;
+      right: 273px;
+
+      height: 83px;
+    }
+  }
+}

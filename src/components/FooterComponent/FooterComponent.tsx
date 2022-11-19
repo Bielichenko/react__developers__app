@@ -1,15 +1,14 @@
 import React from 'react';
-
-import { HeaderLogo } from '../HeaderComponent/HeaderLogo/HeaderLogo';
+import { LogoComponent } from '../LogoComponent/LogoComponent';
 
 import './FooterComponent.scss';
 
 export const FooterComponent = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer__container">
         <div className="footer__logos">
-          <HeaderLogo />
+          <LogoComponent />
           <div className="footer__messangersImages">
             <img src="media/footerImages/messengersImages/1.png" alt="1" />
             <img src="media/footerImages/messengersImages/2.png" alt="2" />

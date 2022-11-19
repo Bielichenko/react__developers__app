@@ -1,0 +1,17 @@
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 703px;
+  
+  background: #DAECFF;
+
+  &__list {
+    
+    &__item {
+      list-style: none;
+    }
+  }
+}

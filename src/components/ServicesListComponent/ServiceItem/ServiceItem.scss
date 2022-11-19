@@ -1,15 +1,49 @@
+@import '../../../utils/mixins/flexCenter.scss';
+
 .serviceItem {
+  width: 61%;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+
   &__top {
     display: flex;
-  }
+    align-items: center;
+    justify-content: space-between;
 
-  &__description {
-    display: flex;
+    height: 61px;
+    padding: 14px 24px 15px 44px;
 
-    padding: 10px;
+    cursor: pointer;
 
-    &__image {
-      // width: 10px;
+    &__indicator {
+      height: 24px;
+      margin-right: 28px;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 61px;
+
+      color: #111111;
+    }
+
+    &__arrow {
+      height: 13px;
     }
   }
+
+
+  &__opened {
+    &__description {
+      display: flex;
+
+      padding: 10px;
+    }
+  }
+}
+
+.container {
+  @include flexCenter;
 }

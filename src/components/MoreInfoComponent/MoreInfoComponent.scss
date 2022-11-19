@@ -1,4 +1,13 @@
 .moreInfo {
+  &__text {
+    height: 500px;
+    text-align: center;
+  }
+
+  &__image {
+    position: absolute;
+  }
+
   &__transferToOrder {
     height: 60px;
     width: 269.859375px;
@@ -6,10 +15,6 @@
     color: rgba(255, 255, 255, 1);
     background: #75E169;
     border-radius: 5px;
-  }
-
-  &__image {
-    position: absolute;
   }
 }
 

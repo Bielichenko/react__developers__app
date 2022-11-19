@@ -7,7 +7,7 @@ import { shops } from './shops';
 
 export const ExamplesComponent = () => {
   return (
-    <div className="examples">
+    <div className="examples" id="portfolio">
       <h2 className="examples__title">
         Примеры онлайн-магазинов
       </h2>

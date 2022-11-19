@@ -16,9 +16,9 @@ export const ServiceItem: React.FC<props> = ({ service }) => {
       {
         isOpened
           ? (
-            <div className="serviceItem">
+            <div className="serviceItem serviceItem--opened">
               <div className="serviceItem__top">
-                <img src="media/servicesImage/indicator--green.png" alt="" className="serviceItem__indicator" />
+                <img src="media/servicesImage/indicator--blue.png" alt="" className="serviceItem__indicator" />
                 <div
                   className="serviceItem__name"
                   onClick={() => setIsOpened(!isOpened)}
@@ -37,19 +37,23 @@ export const ServiceItem: React.FC<props> = ({ service }) => {
             </div>
           )
           : (
-            <div className="serviceItem">
+            <div
+              className="serviceItem serviceItem--closed"
+              onClick={() => setIsOpened(!isOpened)}
+              onKeyDown={() => setIsOpened(!isOpened)}
+              role="button"
+              tabIndex={0}
+            >
               <div className="serviceItem__top">
-                <img src="media/servicesImage/indicator--blue.png" alt="" className="serviceItem__indicator" />
-                <div
-                  className="serviceItem__name"
-                  onClick={() => setIsOpened(!isOpened)}
-                  onKeyDown={() => setIsOpened(!isOpened)}
-                  role="button"
-                  tabIndex={0}
-                >
-                  {service.title}
+                <div className="container">
+                  <img src="media/servicesImage/indicator--green.png" alt="" className="serviceItem__top__indicator" />
+                  <div
+                    className="serviceItem__top__title"
+                  >
+                    {service.title}
+                  </div>
                 </div>
-                <img src="media/servicesImage/arrow.png" alt="" className="serviceItem__arrow" />
+                <img src="media/servicesImage/arrow.png" alt="" className="serviceItem__top__arrow" />
               </div>
             </div>
           )

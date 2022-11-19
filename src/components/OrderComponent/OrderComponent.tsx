@@ -79,7 +79,7 @@ export const OrderComponent = () => {
   };
 
   return (
-    <div className="order">
+    <div className="order" id="order">
       <h2 className="order__title">
         Обсудить проект
       </h2>
