@@ -16,22 +16,22 @@ export const ServiceItem: React.FC<props> = ({ service }) => {
       {
         isOpened
           ? (
-            <div className="serviceItem serviceItem--opened">
+            <div
+              className="serviceItem serviceItem--opened"
+              onClick={() => setIsOpened(!isOpened)}
+              onKeyDown={() => setIsOpened(!isOpened)}
+              role="button"
+              tabIndex={0}
+            >
               <div className="serviceItem__top">
                 <img src="media/servicesImage/indicator--blue.png" alt="" className="serviceItem__indicator" />
-                <div
-                  className="serviceItem__name"
-                  onClick={() => setIsOpened(!isOpened)}
-                  onKeyDown={() => setIsOpened(!isOpened)}
-                  role="button"
-                  tabIndex={0}
-                >
+                <div className="serviceItem__name">
                   {service.title}
                 </div>
                 <img src="media/servicesImage/arrow--opened.png" alt="" className="serviceItem__arrow" />
               </div>
               <div className="serviceItem__description">
-                <img src="media/servicesImage/line.png" alt="" className="serviceItem__description__image" />
+                <img src="media/servicesImage/line.png" alt="" className="serviceItem__description__line" />
                 {service.description}
               </div>
             </div>

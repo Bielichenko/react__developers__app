@@ -11,7 +11,7 @@ export const ServicesListComponent = () => {
       <h2 className="servicesList__title">
         Что входит в услугу по созданию дизайна интернет-магазина?
       </h2>
-      <ul className="setrvicesList__list">
+      <ul className="servicesList__list">
         {services.map((service: IService) => {
           return (
             <li className="servicesList__list__item" key={service.id}>
@@ -20,6 +20,11 @@ export const ServicesListComponent = () => {
           );
         })}
       </ul>
+      <img
+        className="servicesList__bag"
+        src="media/servicesImage/bag.png"
+        alt=""
+      />
     </div>
   );
 };

@@ -1,17 +1,35 @@
 .servicesList {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 703px;
-  
+  padding: 120px 0;
+
   background: #DAECFF;
 
-  &__list {
+  &__title {
+    margin-bottom: 70px;
+
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
     
+    color: #111111;
+  }
+
+  &__list {
+    width: 61%;
+
     &__item {
       list-style: none;
     }
+  }
+
+  &__bag {
+    position: absolute;
+    right: 145px;
+    bottom: 92px;
   }
 }
