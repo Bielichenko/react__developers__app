@@ -1,6 +1,7 @@
 export interface IStage {
   id: number;
-  title: string,
+  title: string;
   description: string;
+  imagesGroup: string;
   images: string[];
 }

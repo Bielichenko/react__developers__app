@@ -1,0 +1,61 @@
+@import '../../../../utils/mixins/flexCenter.scss';
+
+.carousel {
+  @include flexCenter;
+
+  flex-direction: column;
+
+  // height: 150px;
+  // width: 450px;
+
+
+
+  &__arrowsContainer {
+    position: relative;
+    display: flex;
+  }
+
+
+  &__arrowButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../../../../media/stagesImages/rectangle.png);
+
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+
+    &__arrow{
+      width: 12px;
+      height: 24px;
+    }
+  }
+}
+
+.showingWindow {
+  position: relative;
+  display: flex;
+  // width: 100%;
+  // height: 100%;
+  width: 1369px;
+  height: 389px;
+
+  margin-bottom: 84px;
+
+  overflow: hidden;
+
+  &__allStages {
+    position: absolute;
+    display: flex;
+    // height: 100%;
+
+    transition: transform 300ms ease-in-out;
+  }
+}

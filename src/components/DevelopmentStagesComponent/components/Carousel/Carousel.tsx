@@ -10,29 +10,18 @@ import React, {
 
 import './Carousel.scss';
 
-const PAGE__WIDTH = 450;
+import { stages } from '../../stages';
+import { StageCard } from '../StageCard/StageCard';
 
-export const Carousel = ({ children }) => {
-  const [stages, setStages] = useState([]);
+const STAGE__WIDTH = 672;
+const MARGIN__WIDTH = 25;
+
+export const Carousel = () => {
   const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    setStages(
-      Children.map(children, (child) => {
-        return cloneElement(child, {
-          style: {
-            // height: '100%',
-            maxWidth: `${PAGE__WIDTH}PX`,
-            minWidth: `${PAGE__WIDTH}PX`,
-          },
-        });
-      }),
-    );
-  }, []);
 
   const goLeft = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset + PAGE__WIDTH;
+      const newOffset = currentOffset + STAGE__WIDTH + MARGIN__WIDTH;
 
       return Math.min(newOffset, 0);
     });
@@ -40,9 +29,9 @@ export const Carousel = ({ children }) => {
 
   const goRight = () => {
     setOffset((currentOffset) => {
-      const newOffset = currentOffset - PAGE__WIDTH;
+      const newOffset = currentOffset - STAGE__WIDTH - MARGIN__WIDTH;
 
-      const maxOffset = -(PAGE__WIDTH * (stages.length - 1));
+      const maxOffset = -(STAGE__WIDTH * (stages.length - 2) + (stages.length - 2) * MARGIN__WIDTH);
 
       return Math.max(newOffset, maxOffset);
     });
@@ -51,55 +40,48 @@ export const Carousel = ({ children }) => {
   return (
     <div className="carousel">
       <div className="carousel__showingWindow showingWindow">
-        <img
-          className="showingWindow__frame"
-          src="media/stagesImages/rectangle--big.png"
-          alt=""
-        />
         <div
           className="showingWindow__allStages"
           style={{
             transform: `translate(${offset}px)`,
           }}
         >
-          {stages}
+          {
+            stages.map(stage => {
+              return (
+                <React.Fragment key={stage.id}>
+                  <StageCard stage={stage} />
+                </React.Fragment>
+              );
+            })
+          }
         </div>
       </div>
       <div className="carousel__arrowsContainer">
         <div
-          className="carousel__arrowButton arrowButton"
+          className="carousel__arrowButton"
           onClick={() => goLeft()}
           onKeyDown={() => goLeft()}
           role="button"
           tabIndex={0}
         >
           <img
-            src="media/stagesImages/rectangle.png"
-            alt=""
-            className="arrowButton__frame"
-          />
-          <img
             src="media/stagesImages/arrow--left.png"
             alt=""
-            className="arrowButton__arrow"
+            className="carousel__arrowButton__arrow"
           />
         </div>
         <div
-          className="carousel__arrowButton arrowButton"
+          className="carousel__arrowButton"
           onClick={() => goRight()}
           onKeyDown={() => goRight()}
           role="button"
           tabIndex={0}
         >
           <img
-            src="media/stagesImages/rectangle.png"
-            alt=""
-            className="arrowButton__frame"
-          />
-          <img
             src="media/stagesImages/arrow--right.png"
             alt=""
-            className="arrowButton__arrow"
+            className="carousel__arrowButton__arrow"
           />
         </div>
       </div>
