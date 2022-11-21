@@ -22,7 +22,7 @@ export const ShopCard: React.FC<props> = ({ shop }) => {
             key={shop.id}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <h4>Онлайн-магазин</h4>
+            <h4 className="shopCard__title">Онлайн-магазин</h4>
             <p>{shop.description}</p>
           </div>
         )
