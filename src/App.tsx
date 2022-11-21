@@ -16,10 +16,10 @@ export const App: React.FC = () => {
     <div className="app">
       {/* <HeaderComponent />
       <ServicesListComponent />
-      <DevelopmentStagesComponent /> */}
-      <ExamplesComponent />
-      {/* <MoreInfoComponent />
-      <OrderComponent />
+      <DevelopmentStagesComponent />
+      <ExamplesComponent /> */}
+      <MoreInfoComponent />
+      {/* <OrderComponent />
       <FooterComponent /> */}
     </div>
   );
