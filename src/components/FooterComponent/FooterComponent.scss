@@ -1,28 +1,54 @@
 .footer {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  height: 469px;
+  padding: 100px 50px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
   background-color: rgba(100, 171, 249, 1);
 
 
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: start;
+
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 131px;
   }
 
+  &__logos {
+    &__logo {
+      margin-bottom: 33px;
 
-  &__convention{
+      transform: translate(0, -20px);
+    }
+
+    &__messangersImages {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__viberContacts {
     width: max-content;
-    
-    margin: auto;
+
+    &__item {
+      display: flex;
+
+      margin-bottom: 13px;
+    }
   }
-}
 
-
-
-.viberContacts {
-  &__item {
-    display: flex;
+  &__convention {
+    font-size: 18px;
+    line-height: 32px;
   }
 }

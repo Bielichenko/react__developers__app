@@ -8,8 +8,10 @@ export const FooterComponent = () => {
     <div className="footer" id="footer">
       <div className="footer__container">
         <div className="footer__logos">
-          <LogoComponent />
-          <div className="footer__messangersImages">
+          <div className="footer__logos__logo">
+            <LogoComponent />
+          </div>
+          <div className="footer__logos__messangersImages">
             <img src="media/footerImages/messengersImages/1.png" alt="1" />
             <img src="media/footerImages/messengersImages/2.png" alt="2" />
             <img src="media/footerImages/messengersImages/3.png" alt="3" />
@@ -18,20 +20,20 @@ export const FooterComponent = () => {
           </div>
         </div>
         <div className="footer__viberContacts viberContacts">
-          <div className="viberContacts__item">
+          <div className="footer__viberContacts__item">
             <img src="media/footerImages/messengersImages/3.png" alt="3" />
             <p>Валерия: +380505859409</p>
           </div>
-          <div className="viberContacts__item">
+          <div className="footer__viberContacts__item">
             <img src="media/footerImages/messengersImages/3.png" alt="3" />
             <p>Анна: +380505859409</p>
           </div>
-          <div className="viberContacts__item">
+          <div className="footer__viberContacts__item">
             <img src="media/footerImages/messengersImages/3.png" alt="3" />
             <p>Валерия: +380505859409</p>
           </div>
         </div>
-        <p>hr@dv-s.com</p>
+        <p className="footer__email">hr@dv-s.com</p>
       </div>
       <p className="footer__convention">Developers 2018-2022 © All rights reserved</p>
     </div>

@@ -18,9 +18,9 @@ export const App: React.FC = () => {
       <ServicesListComponent />
       <DevelopmentStagesComponent />
       <ExamplesComponent />
-      <MoreInfoComponent /> */}
-      <OrderComponent />
-      {/* <FooterComponent /> */}
+      <MoreInfoComponent />
+      <OrderComponent /> */}
+      <FooterComponent />
     </div>
   );
 };
