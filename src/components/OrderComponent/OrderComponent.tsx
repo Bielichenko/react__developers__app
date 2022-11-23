@@ -1,33 +1,39 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
-import { TextField } from '@material-ui/core';
+import cn from 'classnames';
+
+import { TextField, Box } from '@material-ui/core';
 import React, { FormEventHandler, useState } from 'react';
 // import TextField from '@material-ui/core/TextField';
 
 import './OrderComponent.scss';
+import { findEmailError, findNameError, findPhoneError } from '../../utils/helpers/formValidators';
+import inputStyles from '../../utils/stylesPacks/inputStyles';
 
 export const OrderComponent = () => {
-  const [userName, setUserName] = useState<string>('');
-  const [userPhone, setUserPhone] = useState<string>('');
-  const [userEmail, setUserEmail] = useState<string>('');
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [phoneError, setPhoneError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
+  const [userName, setUserName] = useState('');
+  const [userPhone, setUserPhone] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
+  const [emailError, setEmailError] = useState('');
   const [requestWasSent, setRequestWasSent] = useState<boolean>(false);
 
-  const handleNameInput = (input: string) => {
-    setNameError(false);
-    setUserName(input);
-  };
+  const handleUserInput = (inputType: string, input: string): null => {
+    switch (inputType) {
+      case 'input--name':
+        setUserName(input);
+        break;
+      case 'input--phone':
+        setUserPhone(input);
+        break;
+      case 'input--email':
+        setUserEmail(input);
+        break;
+      default: return null;
+    }
 
-  const handlePhoneInput = (input: string) => {
-    setPhoneError(false);
-    setUserPhone(input);
-  };
-
-  const handleEmailInput = (input: string) => {
-    setEmailError(false);
-    setUserEmail(input);
+    return null;
   };
 
   const resetForm = () => {
@@ -37,27 +43,19 @@ export const OrderComponent = () => {
   };
 
   const setFormErrors = () => {
-    if (!userName) {
-      setNameError(true);
-    }
-
-    if (!userPhone) {
-      setPhoneError(true);
-    }
-
-    if (!userEmail) {
-      setEmailError(true);
-    }
+    setNameError(findNameError(userName));
+    setPhoneError(findPhoneError(userPhone));
+    setEmailError(findEmailError(userEmail));
   };
 
   const removeFormErrors = () => {
-    setNameError(false);
-    setPhoneError(false);
-    setEmailError(false);
+    setNameError('');
+    setPhoneError('');
+    setEmailError('');
   };
 
   const isFormValid = () => {
-    if (userName && userPhone && userEmail) {
+    if (!findNameError(userName) && !findPhoneError(userPhone) && !findEmailError(userEmail)) {
       return true;
     }
 
@@ -80,55 +78,68 @@ export const OrderComponent = () => {
 
   return (
     <div className="order" id="order">
-      <h2 className="order__title">
-        Обсудить проект
-      </h2>
-      <p className="order__text">
-        Расскажите о своих бизнес-целях и мы поможем
-        <br />
-        вам в их достижении
-      </p>
-      {
-        requestWasSent ? <div className="p">Заявка была отправлена!</div> : null
-      }
-      <form
-        className="order__form"
-        noValidate
-        autoComplete="off"
-        onSubmit={handleSubmit}
-      >
-        <TextField
-          onChange={(e) => handleNameInput(e.target.value)}
-          id="outlined-basic"
-          label="Имя"
-          variant="outlined"
-          required
-          error={nameError}
-          value={userName}
-        />
-        <TextField
-          onChange={(e) => handlePhoneInput(e.target.value)}
-          id="outlined-basic"
-          label="Telegram/Viber"
-          variant="outlined"
-          required
-          error={phoneError}
-          value={userPhone}
-        />
-        <TextField
-          onChange={(e) => handleEmailInput(e.target.value)}
-          id="outlined-basic"
-          label="Email"
-          variant="outlined"
-          required
-          error={emailError}
-          value={userEmail}
-        />
-        <button type="submit">Отправить</button>
-      </form>
-      <img src="media/orderImages/phoneCall.png" className="order__image" alt="" />
-      <img src="media/orderImages/sphere.png" className="order__image" alt="" />
-      <img src="media/orderImages/wave.png" className="order__image" alt="" />
+      <div className="order__formBlock">
+        <h2 className="order__formBlock__title">
+          Обсудить проект
+        </h2>
+        <p className="order__formBlock__text">
+          Расскажите о своих бизнес-целях и мы поможем
+          <br />
+          вам в их достижении
+        </p>
+        {
+          requestWasSent ? <div className="p">Заявка была отправлена!</div> : null
+        }
+        <form
+          className="order__formBlock__form"
+          noValidate
+          autoComplete="off"
+          onSubmit={handleSubmit}
+        >
+          <TextField
+            onChange={(e) => handleUserInput(e.target.id, e.target.value)}
+            onFocus={() => setNameError('')}
+            id="input--name"
+            label="Имя"
+            variant="outlined"
+            required
+            error={!!nameError}
+            value={userName}
+            sx={inputStyles}
+          />
+          <p className={cn('error', { 'error--name': nameError })}>{nameError}</p>
+          <TextField
+            className="form__input"
+            onFocus={() => setPhoneError('')}
+            onChange={(e) => handleUserInput(e.target.id, e.target.value)}
+            id="input--phone"
+            label="Telegram/Viber"
+            variant="outlined"
+            required
+            error={!!phoneError}
+            value={userPhone}
+            sx={inputStyles}
+          />
+          <p className={cn('error', { 'error--phone': phoneError })}>{phoneError}</p>
+          <TextField
+            className="form__input"
+            onFocus={() => setEmailError('')}
+            onChange={(e) => handleUserInput(e.target.id, e.target.value)}
+            id="input--email"
+            label="Email"
+            variant="outlined"
+            required
+            error={!!emailError}
+            value={userEmail}
+            sx={inputStyles}
+          />
+          <p className={cn('error', { 'error--email': emailError })}>{emailError}</p>
+          <button className="order__formBlock__orderButton" type="submit">Отправить</button>
+        </form>
+      </div>
+      <img src="media/orderImages/phoneCall.png" className="order__image order__image--phone" alt="" />
+      <img src="media/orderImages/sphere.png" className="order__image order__image--sphere" alt="" />
+      <img src="media/orderImages/wave.png" className="order__image order__image--wave" alt="" />
     </div>
   );
 };

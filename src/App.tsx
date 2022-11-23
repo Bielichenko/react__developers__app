@@ -17,10 +17,10 @@ export const App: React.FC = () => {
       {/* <HeaderComponent />
       <ServicesListComponent />
       <DevelopmentStagesComponent />
-      <ExamplesComponent /> */}
-      <MoreInfoComponent />
-      {/* <OrderComponent />
-      <FooterComponent /> */}
+      <ExamplesComponent />
+      <MoreInfoComponent /> */}
+      <OrderComponent />
+      {/* <FooterComponent /> */}
     </div>
   );
 };
