@@ -1,4 +1,4 @@
-import { IShop } from '../../types/IShop';
+import { IShop } from '../../../types/IShop';
 
 export const shops: IShop[] = [
   {

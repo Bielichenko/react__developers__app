@@ -1,4 +1,4 @@
-import { IService } from '../../types/IService';
+import { IService } from '../../../types/IService';
 
 export const services: IService[] = [
   {

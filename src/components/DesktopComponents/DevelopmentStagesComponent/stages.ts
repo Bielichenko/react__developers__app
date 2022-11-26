@@ -1,4 +1,4 @@
-import { IStage } from '../../types/IStage';
+import { IStage } from '../../../types/IStage';
 
 export const stages: IStage[] = [
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IService } from '../../types/IService';
+import { IService } from '../../../types/IService';
 import { ServiceItem } from './ServiceItem/ServiceItem';
 import { services } from './services';
 

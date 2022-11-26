@@ -1,26 +1,19 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable brace-style */
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
-
-import { DevelopmentStagesComponent } from './components/DevelopmentStagesComponent/DevelopmentStagesComponent';
-import { ExamplesComponent } from './components/ExamplesComponent/ExamplesComponent';
-import { FooterComponent } from './components/FooterComponent/FooterComponent';
-import { HeaderComponent } from './components/HeaderComponent/HeaderComponent';
-import { MoreInfoComponent } from './components/MoreInfoComponent/MoreInfoComponent';
-import { ServicesListComponent } from './components/ServicesListComponent/ServicesListComponent';
-import { OrderComponent } from './components/OrderComponent/OrderComponent';
+import React, { useEffect, useState } from 'react';
+import Media from 'react-media';
+import { DesktopVersion } from './components/DesktopComponents/DesktopVersion';
 
 import './App.scss';
 
 export const App: React.FC = () => {
   return (
     <div className="app">
-      {/* <HeaderComponent />
-      <ServicesListComponent />
-      <DevelopmentStagesComponent />
-      <ExamplesComponent />
-      <MoreInfoComponent />
-      <OrderComponent /> */}
-      <FooterComponent />
+      <Media query="(min-width: 1500px)">
+        <DesktopVersion />
+      </Media>
     </div>
   );
 };

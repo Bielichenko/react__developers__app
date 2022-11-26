@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { ShopCard } from './components/ShopCard';
+import { ShopCard } from './ExamplesShopCard/ShopCard';
 
 import './ExamplesComponent.scss';
 import { shops } from './shops';

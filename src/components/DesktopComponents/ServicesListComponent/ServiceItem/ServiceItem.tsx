@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
-import { IService } from '../../../types/IService';
+import { IService } from '../../../../types/IService';
 
 import './ServiceItem.scss';
 

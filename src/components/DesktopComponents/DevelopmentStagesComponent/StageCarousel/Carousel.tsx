@@ -10,7 +10,7 @@ import React, {
 
 import './Carousel.scss';
 
-import { stages } from '../../stages';
+import { stages } from '../stages';
 import { StageCard } from '../StageCard/StageCard';
 
 const STAGE__WIDTH = 672;
