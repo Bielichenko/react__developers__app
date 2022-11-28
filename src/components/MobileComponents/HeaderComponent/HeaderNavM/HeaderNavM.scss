@@ -1,0 +1,33 @@
+@import '../../../../utils/mixins/orderButton.scss';
+
+.headerNavM {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 49px;
+  width: 100%;
+
+  // overflow: hidden;
+
+  &__mobileMenuOpener {
+    display: flex;
+    width: 49px;
+    justify-content: space-between;
+
+    &__elipse {
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+
+  background: #67AEFC;
+
+  &__links {
+    display: flex;
+  }
+}

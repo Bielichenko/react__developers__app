@@ -1,0 +1,114 @@
+@import '../../../utils/mixins/orderButton.scss';
+
+.order {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 774px;
+
+  background-color: #DAECFF;
+
+  &__formBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 10px;
+
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-bottom: 27px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__orderButton {
+      @include orderButton;
+
+      align-self: center;
+
+      width: 270px;
+      height: 60px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+
+    &--phone {
+      top: 262px;
+      left: 232px;
+
+      width: 206px;
+      height: 268px;
+
+      transform: rotate(-8.9deg);
+    }
+
+    &--sphere {
+      top: 363px;
+      right: 410px;
+
+      width: 67px;
+      height: 67px;
+
+      transform: rotate(3.22deg);
+    }
+
+    &--wave {
+      top: 289px;
+      right: 405px;
+
+      width: 177px;
+      height: 51px;
+
+      transform: rotate(-7.91deg);
+    }
+  }
+}
+
+.error {
+  position: absolute;
+
+  visibility: hidden;
+  font-size: 12px;
+  color: red;
+
+  &--name {
+    top: 370px;
+    left: 50;
+
+    visibility: visible;
+  }
+
+  &--phone {
+    top: 446px;
+    left: 50;
+
+    visibility: visible;
+  }
+
+  &--email {
+    top: 522px;
+    left: 50;
+
+    visibility: visible;
+  }
+}

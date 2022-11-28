@@ -1,0 +1,29 @@
+.shopCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 568px;
+  height: 447px;
+
+
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: 568px 447px;
+
+  transition: 400ms;
+
+  &:nth-child(-n + 4) {
+    margin-bottom: 38px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 33px;
+  }
+
+  &:hover {
+    background-image: url(../../../../media/examplesImages/backGroundImage.png);
+    opacity: 1;
+  }
+}

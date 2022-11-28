@@ -1,0 +1,61 @@
+@import '../../../../utils/mixins/flexCenter.scss';
+
+.serviceItem {
+  margin-bottom: 10px;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: 300ms;
+
+  &:hover {
+    border-radius: 15px;
+    background-color: rgb(233, 242, 244);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 61px;
+    padding: 14px 24px 15px 44px;
+
+
+    &__indicator {
+      height: 24px;
+      margin-right: 28px;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 61px;
+
+      color: #111111;
+    }
+
+    &__arrow {
+      height: 13px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+
+    padding: 15px 70px 50px 55px;
+
+    &__line {
+      margin-right: 40px;
+    }
+  }
+
+}
+
+.container {
+  @include flexCenter;
+}

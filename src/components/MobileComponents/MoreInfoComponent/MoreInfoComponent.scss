@@ -1,0 +1,111 @@
+@import '../../../utils/mixins/orderButton.scss';
+
+.moreInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 724px;
+
+  &__textBlock {
+    margin-right: 150px;
+
+    &__title {
+      margin-bottom: 53px;
+
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin-bottom: 67px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &__transferToOrder {
+      @include orderButton;
+
+      height: 60px;
+      width: 270px;
+    }
+  }
+
+  &__imagesBlock {
+    width: 412px;
+    height: 382px;
+
+    &__image {
+      position: absolute;
+
+      &--clock {
+        top: 213px;
+        right: 626px;
+
+        width: 130px;
+        height: 137px;
+      }
+
+      &--cylinder {
+        z-index: 1;
+        top: 436px;
+        right: 256px;
+
+        width: 254px;
+        height: 135px;
+      }
+
+      &--order {
+        top: 239px;
+        right: 310px;
+
+        width: 412px;
+        height: 382px;
+      }
+
+      &--sphereBig {
+        top: 153px;
+        left: 150px;
+
+        width: 59px;
+        height: 58px;
+      }
+
+      &--spherePurple {
+        top: 137px;
+        right: 312px;
+
+        width: 51px;
+        height: 51px;
+      }
+
+      &--sphereSmall {
+        top: 150px;
+        right: 383px;
+
+        width: 25px;
+        height: 25px;
+      }
+
+      &--taper {
+        top: 372px;
+        right: 145px;
+
+        width: 71px;
+        height: 78px;
+      }
+
+      &--wave {
+        top: 463px;
+        right: 662px;
+
+        width: 172px;
+        height: 83px;
+      }
+    }
+  }
+}

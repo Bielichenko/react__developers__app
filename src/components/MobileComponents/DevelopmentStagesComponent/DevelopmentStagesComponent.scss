@@ -1,0 +1,33 @@
+@import '../../../utils/mixins/flexCenter.scss';
+
+.developmentStages {
+  @include flexCenter;
+
+  flex-direction: column;
+
+  height: 908px;
+
+  &__title {
+    margin-bottom: 84px;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--sphere {
+      top: 129px;
+      left: 187px;
+
+      width: 67px;
+      height: 67px;
+    }
+
+    &--wave {
+      bottom: 47px;
+      right: 186px;
+
+      width: 190px;
+      height: 70px;
+    }
+  }
+}

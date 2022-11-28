@@ -1,0 +1,40 @@
+.examples {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 1749px;
+  padding: 121px;
+
+  background-color: rgba(218, 236, 255, 1);
+
+  &__title {
+    margin-bottom: 51px;
+
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &__shops {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--wave {
+      top: 301px;
+      left: 21px;
+    }
+
+    &--sphere {
+      bottom: 245px;
+      right: 100px;
+    }
+  }
+}

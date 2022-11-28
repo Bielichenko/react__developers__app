@@ -1,0 +1,50 @@
+.logoM {
+  position: relative;
+
+  width: 130px;
+  height: 49px;
+
+  &__item {
+    position: absolute;
+
+    height: 28px;
+    width: 24px;
+
+    &--left {
+      top: 9px;
+      left: 0;
+      
+      padding: 4px 10px 4px 4px;
+      
+      background-image: url(../../../media/logoImages/back--left.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--right {
+      top: 16px;
+      left: 20px;
+
+      padding: 4px 4px 4px 10px;
+
+      background-image: url(../../../media/logoImages/back--right.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &__arrow {
+      width: 10px;
+      height: 21px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 18px;
+    left: 45px;
+
+    color: white;
+    // font-weight: 700;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,90 @@
+.headerImagesM {
+  &__ellipse {
+    position: absolute;
+
+    &--blue {
+      top: 35px;
+      right: 0;
+
+      height: 253px;
+    }
+
+    &--green {
+      top: 28px;
+      left: 0;
+
+      height: 66px;
+    }
+  }
+
+  &__cart {
+    position: absolute;
+    top: 80px;
+    right: 84px;
+
+    height: 204px;
+  }
+
+  &__sphere {
+    position: absolute;
+
+    &--blue {
+      top: 160px;
+      right: 50px;
+
+      height: 24px;
+    }
+
+    &--purple {
+      z-index: -1;
+      top: 271px;
+      right: 24px;
+
+      height: 26px;
+    }
+  }
+
+  &__wave {
+    position: absolute;
+
+    &--blue {
+      z-index: -1;
+      top: 152px;
+      right: 245px;
+
+      height: 28px;
+    }
+
+    &--purple {
+      top: 109px;
+      right: 41px;
+
+      height: 33px;
+
+      &--left {
+        top: 237px;
+        left: 2px;
+
+        height: 26px;
+      }
+    }
+  }
+
+  &__cylinder {
+    position: absolute;
+
+    &--blue {
+      top: 35px;
+      right: 184px;
+
+      height: 22px;
+    }
+
+    &--pink {
+      top: 233px;
+      right: 60px;
+
+      height: 35px;
+    }
+  }
+}
