@@ -8,17 +8,17 @@ import Media from 'react-media';
 import { DevelopmentStagesComponent } from './DevelopmentStagesComponent/DevelopmentStagesComponent';
 import { ExamplesComponent } from './ExamplesComponent/ExamplesComponent';
 import { FooterComponent } from './FooterComponent/FooterComponent';
-import { HeaderComponent } from './HeaderComponent/HeaderComponent';
+import { HeaderComponentM } from './HeaderComponent/HeaderComponentM';
 import { MoreInfoComponent } from './MoreInfoComponent/MoreInfoComponent';
-import { ServicesListComponent } from './ServicesListComponent/ServicesListComponent';
+import { ServicesListComponentM } from './ServicesListComponent/ServicesListComponentM';
 import { OrderComponent } from './OrderComponent/OrderComponent';
 
 export const MobileVersion = () => {
   return (
     <div className="mobileVersion">
-      <HeaderComponent />
-      {/* <ServicesListComponent />
-      <DevelopmentStagesComponent />
+      {/* <HeaderComponentM /> */}
+      <ServicesListComponentM />
+      {/* <DevelopmentStagesComponent />
       <ExamplesComponent />
       <MoreInfoComponent />
       <OrderComponent />

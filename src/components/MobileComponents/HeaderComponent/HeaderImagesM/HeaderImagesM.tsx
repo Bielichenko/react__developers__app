@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 
-import './HeaderImages.scss';
+import './HeaderImagesM.scss';
 
 export const HeaderImagesM = () => {
   return (

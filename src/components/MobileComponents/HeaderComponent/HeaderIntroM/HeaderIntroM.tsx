@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderImagesM } from '../HeaderImages/HeaderImagesM';
+import { HeaderImagesM } from '../HeaderImagesM/HeaderImagesM';
 import { HeaderMenuM } from '../HeaderMenuM/HeaderMenuM';
 
 import './HeaderIntroM.scss';
