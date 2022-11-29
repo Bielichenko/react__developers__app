@@ -1,0 +1,247 @@
+@import '../../../../utils/mixins/flexCenter.scss';
+
+$CARD__WIDTH: 335px;
+$CARD__HEIGHT: 615px;
+
+.stageCardM {
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: start;
+
+  padding: 27px 29px 0 33px;
+
+  width: $CARD__WIDTH;
+  height: $CARD__HEIGHT;
+
+  margin-right: 25px;
+
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+
+  // background-image: url(../../../../media/stagesImages/rectangle--big.png);
+  // background-size: $CARD__WIDTH $CARD__HEIGHT;
+  // background-repeat: no-repeat;
+
+  &__textContainer {
+    &__title {
+      font-weight: 800;
+      font-size: 23px;
+      line-height: 34px;      
+      
+      color: #111111;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+.imageGroupM {
+  position: absolute;
+
+  &--analysis {
+    &--0 {
+      bottom: 62px;
+      right: 54px;
+
+      width: 220px;
+      height: 232px;
+    }
+  }
+
+  &--vSolution {
+    &--0 {
+      bottom: 32px;
+      right: 55px;
+
+      width: 220px;
+      height: 216px;
+    }
+  }
+
+  &--realization {
+    transform: rotate(15.72deg);
+
+    &--0 {
+      //barcode
+      z-index: 1;
+      bottom: 126px;
+      left: 61px;
+
+      width: 115px;
+      height: 81px;
+    }
+
+    &--1 {
+      //cylinder
+
+      bottom: 48px;
+      left: 191px;
+
+      width: 64px;
+      height: 60px;
+    }
+
+    &--2 {
+      //cylinder--purple
+
+      bottom: 52px;
+      left: 64px;
+
+      width: 63px;
+      height: 31px;
+    }
+
+    &--3 {
+      //mobile
+
+      bottom: 47px;
+      left: 79px;
+
+      width: 127px;
+      height: 190px;
+    }
+
+    &--4 {
+      //sphere--big
+
+      bottom: 250px;
+      left: 83px;
+
+      width: 35px;
+      height: 35px;
+    }
+
+    &--5 {
+      //sphere--small
+
+      bottom: 170px;
+      left: 263px;
+
+      width: 16px;
+      height: 16px;
+    }
+
+    &--6 {
+      //wave
+
+      z-index: -1;
+      bottom: 194px;
+      left: 199px;
+
+      width: 96px;
+      height: 40px;
+    }
+  }
+
+  &--content {
+    &--0 {
+      //deposit--big
+
+      bottom: 169px;
+      left: 248px;
+
+      width: 27px;
+      height: 57px;
+    }
+
+    &--1 {
+      //deposit--small
+
+      bottom: 52px;
+      left: 175px;
+
+      width: 24px;
+      height: 42px;
+    }
+
+    &--2 {
+      //plus--big
+
+      z-index: 1;
+      bottom: 60px;
+      left: 187px;
+
+      width: 99px;
+      height: 103px;
+    }
+
+    &--3 {
+      //plus--small
+
+      bottom: 209px;
+      left: 81px;
+
+      width: 50px;
+      height: 48px;
+    }
+
+    &--4 {
+      //sphere--purple
+
+      bottom: 123px;
+      left: 76px;
+
+      width: 38px;
+      height: 38px;
+    }
+
+    &--5 {
+      //wallet
+
+      bottom: 68px;
+      left: 94px;
+
+      width: 131px;
+      height: 173px;
+    }
+
+    &--6 {
+      //wave
+
+      bottom: 64px;
+      left: 36px;
+
+      width: 100px;
+      height: 42px;
+    }
+  }
+
+  &--testing {
+    &--0 {
+      //cylinder
+      bottom: 213px;
+      left: 41px;
+
+      width: 60px;
+      height: 57px;
+    }
+
+    &--1 {
+      //gear
+      bottom: 20px;
+      left: 84px;
+
+      width: 225px;
+      height: 225px;
+
+      transform: rotate(3.04deg);
+    }
+
+    &--2 {
+      //sphere
+      bottom: 163px;
+      left: 48px;
+
+      width: 35px;
+      height: 35px;
+
+      transform: rotate(15.72deg)
+    }
+  }
+}

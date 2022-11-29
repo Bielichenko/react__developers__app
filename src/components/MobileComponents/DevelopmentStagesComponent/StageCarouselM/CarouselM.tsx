@@ -8,15 +8,15 @@ import React, {
   cloneElement,
 } from 'react';
 
-import './Carousel.scss';
+import './CarouselM.scss';
 
 import { stages } from '../stages';
-import { StageCard } from '../StageCard/StageCard';
+import { StageCardM } from '../StageCardM/StageCardM';
 
-const STAGE__WIDTH = 672;
+const STAGE__WIDTH = 335;
 const MARGIN__WIDTH = 25;
 
-export const Carousel = () => {
+export const CarouselM = () => {
   const [offset, setOffset] = useState(0);
 
   const goLeft = () => {
@@ -31,17 +31,17 @@ export const Carousel = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - STAGE__WIDTH - MARGIN__WIDTH;
 
-      const maxOffset = -(STAGE__WIDTH * (stages.length - 2) + (stages.length - 2) * MARGIN__WIDTH);
+      const maxOffset = -(STAGE__WIDTH * (stages.length - 1) + (stages.length - 1) * MARGIN__WIDTH);
 
       return Math.max(newOffset, maxOffset);
     });
   };
 
   return (
-    <div className="carousel">
-      <div className="carousel__showingWindow showingWindow">
+    <div className="carouselM">
+      <div className="carouselM__showingWindowM showingWindowM">
         <div
-          className="showingWindow__allStages"
+          className="showingWindowM__allStages"
           style={{
             transform: `translate(${offset}px)`,
           }}
@@ -50,16 +50,16 @@ export const Carousel = () => {
             stages.map(stage => {
               return (
                 <React.Fragment key={stage.id}>
-                  <StageCard stage={stage} />
+                  <StageCardM stage={stage} />
                 </React.Fragment>
               );
             })
           }
         </div>
       </div>
-      <div className="carousel__arrowsContainer">
+      <div className="carouselM__arrowsContainer">
         <div
-          className="carousel__arrowButton"
+          className="carouselM__arrowButton"
           onClick={() => goLeft()}
           onKeyDown={() => goLeft()}
           role="button"
@@ -68,11 +68,11 @@ export const Carousel = () => {
           <img
             src="media/stagesImages/arrow--left.png"
             alt=""
-            className="carousel__arrowButton__arrow"
+            className="carouselM__arrowButton__arrow"
           />
         </div>
         <div
-          className="carousel__arrowButton"
+          className="carouselM__arrowButton"
           onClick={() => goRight()}
           onKeyDown={() => goRight()}
           role="button"
@@ -81,7 +81,7 @@ export const Carousel = () => {
           <img
             src="media/stagesImages/arrow--right.png"
             alt=""
-            className="carousel__arrowButton__arrow"
+            className="carouselM__arrowButton__arrow"
           />
         </div>
       </div>

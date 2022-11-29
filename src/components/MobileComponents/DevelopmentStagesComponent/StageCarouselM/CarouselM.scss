@@ -1,6 +1,7 @@
 @import '../../../../utils/mixins/flexCenter.scss';
+@import '../StageCardM/StageCardM.scss';
 
-.carousel {
+.carouselM {
   @include flexCenter;
 
   flex-direction: column;
@@ -29,7 +30,7 @@
     cursor: pointer;
 
     &:first-child {
-      margin-right: 30px;
+      margin-right: 107px;
     }
 
     &__arrow{
@@ -39,15 +40,15 @@
   }
 }
 
-.showingWindow {
+.showingWindowM {
   position: relative;
   display: flex;
   // width: 100%;
   // height: 100%;
-  width: 1369px;
-  height: 389px;
+  width: $CARD__WIDTH;
+  height: $CARD__HEIGHT;
 
-  margin-bottom: 84px;
+  margin-bottom: 25px;
 
   overflow: hidden;
 

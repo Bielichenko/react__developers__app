@@ -1,6 +1,7 @@
 @import '../../../utils/mixins/flexCenter.scss';
+@import './StageCardM/StageCardM.scss';
 
-.developmentStages {
+.developmentStagesM {
   @include flexCenter;
 
   flex-direction: column;
@@ -8,26 +9,21 @@
   height: 908px;
 
   &__title {
-    margin-bottom: 84px;
+    max-width: $CARD__WIDTH;
+    margin-bottom: 30px;
+
+    text-align: center;
   }
 
   &__image {
     position: absolute;
 
     &--sphere {
-      top: 129px;
-      left: 187px;
+      top: 18px;
+      left: -30px;
 
       width: 67px;
       height: 67px;
-    }
-
-    &--wave {
-      bottom: 47px;
-      right: 186px;
-
-      width: 190px;
-      height: 70px;
     }
   }
 }
