@@ -1,26 +1,20 @@
-.shopCard {
+.shopCardM {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 568px;
-  height: 447px;
+  width: 335px;
+  height: 260px;
+  margin-bottom: 15px;
+  margin-right: 20px;
 
 
   color: rgb(255, 255, 255);
   background-repeat: no-repeat;
-  background-size: 568px 447px;
+  background-size: 335px 260px;
 
-  transition: 400ms;
-
-  &:nth-child(-n + 4) {
-    margin-bottom: 38px;
-  }
-
-  &:nth-child(odd) {
-    margin-right: 33px;
-  }
+  transition: 300ms;
 
   &:hover {
     background-image: url(../../../../media/examplesImages/backGroundImage.png);

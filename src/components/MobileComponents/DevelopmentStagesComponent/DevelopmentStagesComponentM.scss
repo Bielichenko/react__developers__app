@@ -4,6 +4,7 @@
 .developmentStagesM {
   @include flexCenter;
 
+  position: relative;
   flex-direction: column;
 
   height: 908px;

@@ -1,0 +1,36 @@
+.examplesM {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // height: 1055px;
+  padding: 20px 20px 30px;
+
+  background-color: rgba(218, 236, 255, 1);
+
+  &__title {
+    max-width: 335px;
+    margin-bottom: 14px;
+
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 34px;
+    text-align: center;
+    color: #111111;
+  }
+
+
+  &__image {
+    position: absolute;
+
+    &--sphere {
+      bottom: -20px;
+      right: 33px;
+
+      width: 39px;
+      height: 39px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+// @import '../../../../utils/mixins/flexCenter.scss';
+@import '../../../../utils/mixins/flexCenter.scss';
+// @import '../StageCardM/StageCardM.scss';
+
+.carouselM {
+  @include flexCenter;
+
+  flex-direction: column;
+
+  // height: 150px;
+  // width: 450px;
+
+
+
+  &__arrowsContainer {
+    position: relative;
+    display: flex;
+  }
+
+
+  &__arrowButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../../../../media/stagesImages/rectangle.png);
+
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 107px;
+    }
+
+    &__arrow{
+      width: 12px;
+      height: 24px;
+    }
+  }
+}
+
+.examplesShowingWindowM {
+  position: relative;
+  display: flex;
+  width: 335px;
+  // height: 100%;
+  // width: $CARD__WIDTH;
+  // height: $CARD__HEIGHT;
+
+  margin-bottom: 15px;
+
+  overflow: hidden;
+
+  
+  &__shopsSprite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 825px;
+
+    transition: 300ms;
+  }
+
+  // &__allStages {
+  //   position: absolute;
+  //   display: flex;
+  //   // height: 100%;
+
+  //   transition: transform 300ms ease-in-out;
+  // }
+}

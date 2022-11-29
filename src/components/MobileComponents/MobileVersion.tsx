@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 import Media from 'react-media';
 
 import { DevelopmentStagesComponentM } from './DevelopmentStagesComponent/DevelopmentStagesComponentM';
-import { ExamplesComponent } from './ExamplesComponent/ExamplesComponent';
+import { ExamplesComponentM } from './ExamplesComponent/ExamplesComponentM';
 import { FooterComponent } from './FooterComponent/FooterComponent';
 import { HeaderComponentM } from './HeaderComponent/HeaderComponentM';
 import { MoreInfoComponent } from './MoreInfoComponent/MoreInfoComponent';
@@ -16,11 +16,11 @@ import { OrderComponent } from './OrderComponent/OrderComponent';
 export const MobileVersion = () => {
   return (
     <div className="mobileVersion">
-      {/* <HeaderComponentM />
-      <ServicesListComponentM /> */}
+      <HeaderComponentM />
+      <ServicesListComponentM />
       <DevelopmentStagesComponentM />
-      {/* <ExamplesComponent />
-      <MoreInfoComponent />
+      <ExamplesComponentM />
+      {/* <MoreInfoComponent />
       <OrderComponent />
       <FooterComponent /> */}
     </div>
