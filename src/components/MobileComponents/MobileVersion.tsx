@@ -7,11 +7,11 @@ import Media from 'react-media';
 
 import { DevelopmentStagesComponentM } from './DevelopmentStagesComponent/DevelopmentStagesComponentM';
 import { ExamplesComponentM } from './ExamplesComponent/ExamplesComponentM';
-import { FooterComponent } from './FooterComponent/FooterComponent';
+import { FooterComponentM } from './FooterComponent/FooterComponentM';
 import { HeaderComponentM } from './HeaderComponent/HeaderComponentM';
-import { MoreInfoComponent } from './MoreInfoComponent/MoreInfoComponent';
+import { MoreInfoComponentM } from './MoreInfoComponent/MoreInfoComponentM';
 import { ServicesListComponentM } from './ServicesListComponent/ServicesListComponentM';
-import { OrderComponent } from './OrderComponent/OrderComponent';
+import { OrderComponentM } from './OrderComponent/OrderComponentM';
 
 export const MobileVersion = () => {
   return (
@@ -20,9 +20,9 @@ export const MobileVersion = () => {
       <ServicesListComponentM />
       <DevelopmentStagesComponentM />
       <ExamplesComponentM />
-      {/* <MoreInfoComponent />
-      <OrderComponent />
-      <FooterComponent /> */}
+      <MoreInfoComponentM />
+      <OrderComponentM />
+      <FooterComponentM />
     </div>
   );
 };

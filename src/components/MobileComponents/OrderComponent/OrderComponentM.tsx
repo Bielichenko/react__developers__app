@@ -1,16 +1,17 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-console */
+/* eslint-disable*/
 import cn from 'classnames';
 
 import { TextField, Box } from '@material-ui/core';
 import React, { FormEventHandler, useState } from 'react';
 // import TextField from '@material-ui/core/TextField';
 
-import './OrderComponent.scss';
+import './OrderComponentM.scss';
 import { findEmailError, findNameError, findPhoneError } from '../../../utils/helpers/formValidators';
 import inputStyles from '../../../utils/stylesPacks/inputStyles';
 
-export const OrderComponent = () => {
+export const OrderComponentM = () => {
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
   const [userEmail, setUserEmail] = useState('');
@@ -66,7 +67,6 @@ export const OrderComponent = () => {
     e.preventDefault();
 
     if (isFormValid()) {
-      removeFormErrors();
       resetForm();
       setRequestWasSent(true);
     }
@@ -77,21 +77,21 @@ export const OrderComponent = () => {
   };
 
   return (
-    <div className="order" id="order">
-      <div className="order__formBlock">
-        <h2 className="order__formBlock__title">
+    <div className="orderM" id="order">
+      <div className="orderM__formBlock">
+        <h2 className="orderM__formBlock__title">
           Обсудить проект
         </h2>
-        <p className="order__formBlock__text">
-          Расскажите о своих бизнес-целях и мы поможем
+        <p className="orderM__formBlock__text">
+          Расскажите о своих бизнес-целях
           <br />
-          вам в их достижении
+          и мы поможем вам в их достижении
         </p>
         {
           requestWasSent ? <div className="p">Заявка была отправлена!</div> : null
         }
         <form
-          className="order__formBlock__form"
+          className="orderM__formBlock__form"
           noValidate
           autoComplete="off"
           onSubmit={handleSubmit}
@@ -134,12 +134,15 @@ export const OrderComponent = () => {
             sx={inputStyles}
           />
           <p className={cn('error', { 'error--email': emailError })}>{emailError}</p>
-          <button className="order__formBlock__orderButton" type="submit">Отправить</button>
+          <button className="orderM__formBlock__orderButton" type="submit">Отправить</button>
         </form>
+        <div className="orderM__formBlock__imageContainer imageContainer">
+          <img src="media/orderImages/mobile/phoneCall.png" className="imageContainer__image imageContainer__image--phoneCall" alt="" />
+          <img src="media/orderImages/mobile/sphere--blue.png" className="imageContainer__image imageContainer__image--sphereBlue" alt="" />
+          <img src="media/orderImages/mobile/sphere--purple.png" className="imageContainer__image imageContainer__image--spherePurple" alt="" /> 
+          <img src="media/orderImages/mobile/mobile.png" className="imageContainer__image imageContainer__image--mobile" alt="" />
+        </div>
       </div>
-      <img src="media/orderImages/phoneCall.png" className="order__image order__image--phone" alt="" />
-      <img src="media/orderImages/sphere.png" className="order__image order__image--sphere" alt="" />
-      <img src="media/orderImages/wave.png" className="order__image order__image--wave" alt="" />
     </div>
-  );
+  );  
 };

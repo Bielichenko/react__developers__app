@@ -1,6 +1,7 @@
 @import '../../../../utils/mixins/flexCenter.scss';
 
 .serviceItemM {
+  // min-width: 260px;
   margin-bottom: 10px;
 
   background: #FFFFFF;
@@ -15,18 +16,24 @@
     background-color: rgb(233, 242, 244);
   }
 
+  &__container {
+    @include flexCenter;
+    // flex-direction: row;
+  }
+
   &__top {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    min-height: 61px;
-    padding: 14px 24px 15px 44px;
+    // min-height: 61px;
+    padding: 14px 24px 17px 24px;
 
 
     &__indicator {
       height: 24px;
-      margin-right: 28px;
+      margin-right: 18px;
     }
 
     &__title {
@@ -48,18 +55,14 @@
 
     height: max-content;
 
-    padding: 15px 70px 50px 55px;
+    padding: 19px 41px 46px 32px;
 
     &__text {
       padding: 0 0 0 25px;
-      
+
       background-image: url('../../../../media/servicesImage/line.png');
       background-repeat: no-repeat;
       background-size: 1px 100%;
     }
   }
-}
-
-.container {
-  @include flexCenter;
 }

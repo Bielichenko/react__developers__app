@@ -25,7 +25,7 @@ export const ServiceItemM: React.FC<props> = ({ service }) => {
               tabIndex={0}
             >
               <div className="serviceItemM__top">
-                <div className="container">
+                <div className="serviceItemM__container">
                   <img src="media/servicesImage/indicator--blue.png" alt="" className="serviceItemM__top__indicator" />
                   <div
                     className="serviceItemM__top__title"
