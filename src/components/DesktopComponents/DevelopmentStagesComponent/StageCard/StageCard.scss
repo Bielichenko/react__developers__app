@@ -1,7 +1,7 @@
 @import '../../../../utils/mixins/flexCenter.scss';
 
-$CARD__WIDTH: 672px;
-$CARD__HEIGHT: 389PX;
+// $CARD__WIDTH: 672px;
+// $CARD__HEIGHT: 389PX;
 
 .stageCard {
   position: relative;
@@ -12,13 +12,13 @@ $CARD__HEIGHT: 389PX;
 
   padding: 0 70px;
 
-  width: $CARD__WIDTH;
-  height: $CARD__HEIGHT;
+  // width: 45%;
+  // height: $CARD__HEIGHT;
 
   margin-right: 25px;
 
   background-image: url(../../../../media/stagesImages/rectangle--big.png);
-  background-size: $CARD__WIDTH $CARD__HEIGHT;
+  // background-size: $CARD__WIDTH $CARD__HEIGHT;
   background-repeat: no-repeat;
 
   &__textContainer {

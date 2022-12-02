@@ -1,4 +1,5 @@
 @import '../../../utils/mixins/flexCenter.scss';
+@import '../../../utils/mixins/limitContainer';
 
 .developmentStages {
   @include flexCenter;
@@ -6,6 +7,15 @@
   flex-direction: column;
 
   height: 908px;
+  padding: 0 25px;
+
+  &__container {
+    @include limitContainer;
+
+    max-width: 1369px;
+
+    flex-direction: column;
+  }
 
   &__title {
     margin-bottom: 84px;

@@ -1,16 +1,31 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react';
+// import { width } from '@material-ui/system';
+import React, { useEffect } from 'react';
 import { IStage } from '../../../../types/IStage';
 import './StageCard.scss';
 
 interface props {
   stage: IStage
+  stageCardWidth: string;
+  stageCardHeight: string;
 }
 
-export const StageCard: React.FC<props> = ({ stage }) => {
+export const StageCard: React.FC<props> = ({ stage, stageCardWidth, stageCardHeight }) => {
+  useEffect(() => {
+    console.log(stageCardWidth, stageCardHeight);
+  });
+
   return (
-    <div className="stageCard" key={stage.id}>
+    <div
+      className="stageCard"
+      key={stage.id}
+      style={{
+        width: stageCardWidth,
+        height: stageCardHeight,
+        backgroundSize: `${stageCardWidth} ${stageCardHeight}`,
+      }}
+    >
       <div className="stageCard__textContainer">
         <p className="stageCard__textContainer__title">{stage.title}</p>
         <p className="stageCard__textContainer__description">{stage.description}</p>

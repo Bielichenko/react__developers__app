@@ -2,18 +2,32 @@
 
 .headerNav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   height: 95px;
+  padding: 35px;
 
   background: #67AEFC;
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1145px;
+  }
+
   &__links {
     display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+    max-width: 621px;
 
     &__link {
-      margin-right: 30px;
+      margin-right: 5px;
 
       font-weight: 600;
       font-size: 16px;

@@ -1,4 +1,8 @@
+@import '../../../../utils/mixins/onSmallDesktop';
+
 .headerImages {
+
+
   &__ellipse {
     position: absolute;
 
@@ -23,6 +27,12 @@
     right: 305px;
 
     height: 499px;
+
+    @include onSmallDesktop {
+      right: calc(305px*0.7);
+
+      height: calc(499px*0.7);
+    }
   }
 
   &__sphere {

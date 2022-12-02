@@ -1,7 +1,7 @@
 @import '../../../../utils/mixins/orderButton.scss';
+@import '../../../../utils/mixins/_onTablet.scss';
 
 .headerIntroM {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,9 +11,19 @@
 
   overflow: hidden;
 
+  @include onTablet{
+    height: max-content;
+  }
+
   &__imagesContainer {
+    position: relative;
+    
     width: 100%;
     height: 337px;
+
+    @include onTablet{
+      height: 450px;
+    }
   }
 
   &__textBlock {

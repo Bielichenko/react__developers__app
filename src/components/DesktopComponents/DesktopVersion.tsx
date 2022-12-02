@@ -16,13 +16,13 @@ import { OrderComponent } from './OrderComponent/OrderComponent';
 export const DesktopVersion = () => {
   return (
     <div className="components--desktop">
-      <HeaderComponent />
-      <ServicesListComponent />
+      {/* <HeaderComponent />
+      <ServicesListComponent /> */}
       <DevelopmentStagesComponent />
-      <ExamplesComponent />
+      {/* <ExamplesComponent />
       <MoreInfoComponent />
       <OrderComponent />
-      <FooterComponent />
+      <FooterComponent /> */}
     </div>
   );
 };

@@ -9,12 +9,14 @@ import './DevelopmentStagesComponent.scss';
 export const DevelopmentStagesComponent = () => {
   return (
     <div className="developmentStages" id="stages">
-      <h2 className="developmentStages__title">
-        Этапы разработки интернет-магазина
-      </h2>
-      <Carousel />
-      <img className="developmentStages__image developmentStages__image--sphere" src="media/stagesImages/sphere.png" alt="" />
-      <img className="developmentStages__image developmentStages__image--wave" src="media/stagesImages/wave.png" alt="" />
+      <div className="developmentStages__container">
+        <h2 className="developmentStages__title">
+          Этапы разработки интернет-магазина
+        </h2>
+        <Carousel />
+        <img className="developmentStages__image developmentStages__image--sphere" src="media/stagesImages/sphere.png" alt="" />
+        <img className="developmentStages__image developmentStages__image--wave" src="media/stagesImages/wave.png" alt="" />
+      </div>
     </div>
   );
 };
