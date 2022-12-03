@@ -1,8 +1,6 @@
 @import '../../../../utils/mixins/onSmallDesktop';
 
 .headerImages {
-
-
   &__ellipse {
     position: absolute;
 
@@ -11,25 +9,36 @@
       right: 0;
 
       height: 550px;
+
+      @include onSmallDesktop {
+        top: calc(82px*2);
+
+        height: calc(550px*0.7);
+      }
     }
 
     &--white {
-      bottom: 41px;
+      bottom: 0px;
       left: 0;
 
       height: 185px;
+
+      @include onSmallDesktop {
+        height: calc(185px*0.7);
+      }
     }
   }
 
   &__cart {
     position: absolute;
     top: 111px;
-    right: 305px;
+    right: 250px;
 
     height: 499px;
 
     @include onSmallDesktop {
-      right: calc(305px*0.7);
+      top: calc(111px*2);
+      right: calc(250px*0.7);
 
       height: calc(499px*0.7);
     }
@@ -44,11 +53,24 @@
 
       height: 58px;
 
+      @include onSmallDesktop {
+        right: calc(249px*0.7);
+
+        height: calc(58px*0.7);
+      }
+
       &--left {
-        top: 120px;
+        top: 80px;
         left: 100px;
 
         height: 53px;
+
+        @include onSmallDesktop {
+          top: 80px;
+          left: 50px;
+
+          height: calc(53px*0.7);
+        }
       }
     }
 
@@ -57,6 +79,13 @@
       right: 171px;
 
       height: 37px;
+
+      @include onSmallDesktop {
+        top: 300px;
+        right: calc(171px*0.7);
+
+        height: calc(37px*0.7);
+      }
     }
   }
 
@@ -66,9 +95,17 @@
     &--blue {
       z-index: -1;
       top: 370px;
-      right: 660px;
+      right: 600px;
 
       height: 70px;
+
+      @include onSmallDesktop {
+        top: 410px;
+        right: calc(600px*0.7);
+
+        height: calc(70px*0.7);
+      }
+
     }
 
     &--purple {
@@ -77,11 +114,25 @@
 
       height: 81px;
 
+      @include onSmallDesktop {
+        top: 300px;
+        right: calc(220px*0.7);
+
+        height: calc(81px*0.7);
+      }
+
       &--left {
-        top: 608px;
+        bottom: 45px;
         left: 65px;
 
         height: 63px;
+
+        @include onSmallDesktop {
+          bottom: 35px;
+          left: calc(65px*0.7);
+  
+          height: calc(63px*0.7);
+        }
       }
     }
   }
@@ -94,6 +145,13 @@
       right: 530px;
 
       height: 57px;
+
+      @include onSmallDesktop {
+        top: calc(92px*2);
+        right: calc(530px*0.7);
+
+        height: calc(57px*0.7);
+      }
     }
 
     &--pink {
@@ -101,6 +159,13 @@
       right: 273px;
 
       height: 83px;
+
+      @include onSmallDesktop {
+        bottom: 200px;
+        right: calc(273px*0.7);
+
+        height: calc(83px*0.7);
+      }
     }
   }
 }

@@ -16,9 +16,9 @@ import { OrderComponent } from './OrderComponent/OrderComponent';
 export const DesktopVersion = () => {
   return (
     <div className="components--desktop">
-      {/* <HeaderComponent />
-      <ServicesListComponent /> */}
-      <DevelopmentStagesComponent />
+      <HeaderComponent />
+      {/* <ServicesListComponent />
+      <DevelopmentStagesComponent /> */}
       {/* <ExamplesComponent />
       <MoreInfoComponent />
       <OrderComponent />

@@ -28,9 +28,7 @@ export const HeaderIntro = () => {
             Заказать
           </a>
         </div>
-        <div className="headerIntro__imagesContainer">
-          <HeaderImages />
-        </div>
+        <HeaderImages />
       </div>
     </div>
   );

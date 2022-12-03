@@ -1,4 +1,5 @@
 @import '../../../../utils/mixins/flexCenter.scss';
+@import '../../../../utils/mixins/onSmallDesktop';
 
 // $CARD__WIDTH: 672px;
 // $CARD__HEIGHT: 389PX;
@@ -6,11 +7,14 @@
 .stageCard {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
 
   padding: 0 70px;
+
+  @include onSmallDesktop {
+    padding: 0 0 0 20px;
+  }
 
   // width: 45%;
   // height: $CARD__HEIGHT;
@@ -37,6 +41,10 @@
       font-size: 18px;
       line-height: 25px;
     }
+
+    @include onSmallDesktop {
+      width: 55%;
+    }
   }
 }
 
@@ -49,7 +57,13 @@
       right: 33px;
 
       width: 250px;
-      height: 250px;
+
+      @include onSmallDesktop {
+        top: auto;
+        right: 25px;
+
+        width: 35%;
+      }
     }
   }
 
@@ -59,7 +73,14 @@
       right: 60px;
 
       width: 227px;
-      height: 222px;
+
+      @include onSmallDesktop {
+        top: auto;
+        right: 25px;
+
+        width: 35%;
+
+      }
     }
   }
 
@@ -67,136 +88,274 @@
     transform: rotate(15.72deg);
 
     &--0 {
+      //barcode
       z-index: 1;
       top: 108px;
       right: 164px;
 
       width: 130px;
-      height: 92px;
+
+      @include onSmallDesktop {
+        z-index: 1;
+        top: 160px;
+        right: 114px;
+
+        width: 91px;
+      }
     }
+
     &--1 {
+      //cylinder
       top: 234px;
-      right: 78px;
+      right: 85px;
 
       width: 72px;
       height: 69px;
+
+      @include onSmallDesktop {
+        top: 210px;
+        right: 55px;
+
+        width: 50px;
+      }
     }
+
     &--2 {
+      //cylinder--purple
       top: 261px;
       right: 234px;
 
       width: 71px;
       height: 36px;
+
+      @include onSmallDesktop {
+        top: 230px;
+        right: 160px;
+
+        width: 50px;
+      }
     }
+
     &--3 {
+      //mobile
       top: 75px;
       right: 97px;
 
       width: 144px;
-      height: 215px;
+
+      @include onSmallDesktop {
+        top: 140px;
+        right: 68px;
+
+        width: 100px;
+      }
     }
+
     &--4 {
+      //sphere--big
       top: 42px;
       right: 240px;
 
       width: 39px;
-      height: 39px;
+
+      @include onSmallDesktop {
+        top: 100px;
+        right: 168px;
+
+        width: 27px;
+      }
     }
+
     &--5 {
+      //sphere--small
       top: 159px;
       right: 62px;
 
       width: 18px;
-      height: 18px;
+
+      @include onSmallDesktop {
+        top: 206px;
+        right: 43px;
+
+        width: 13px;
+      }
     }
+
     &--6 {
+      //wave
       z-index: -1;
       top: 90px;
       right: 39px;
 
       width: 109px;
-      height: 45px;
+
+      @include onSmallDesktop {
+        z-index: -1;
+        top: 117px;
+        right: 27px;
+
+        width: 76px;
+      }
     }
   }
 
   &--content {
     &--0 {
+      //deposit--big
       top: 135px;
       right: 69px;
 
       width: 27px;
-      height: 57px;
+
+      @include onSmallDesktop {
+        top: 175px;
+        right: 48px;
+
+        width: 19px;
+      }
     }
+
     &--1 {
+      //deposit--small
       top: 268px;
       right: 145px;
 
       width: 24px;
-      height: 42px;
+
+      @include onSmallDesktop {
+        top: 350px;
+        right: 102px;
+
+        width: 17px;
+      }
     }
+
     &--2 {
+      //plus--big
       z-index: 1;
       top: 198px;
       right: 58px;
 
       width: 99px;
-      height: 103px;
+
+      @include onSmallDesktop {
+        z-index: 1;
+        top: 257px;
+        right: 41px;
+
+        width: 69px;
+      }
     }
+
     &--3 {
+      //plus--small
       top: 104px;
       right: 214px;
 
       width: 50px;
-      height: 48px;
+
+      @include onSmallDesktop {
+        top: 135px;
+        right: 150px;
+
+        width: 35px;
+      }
     }
+
     &--4 {
+      //sphere--purple
       top: 201px;
       right: 231px;
 
       width: 38px;
-      height: 38px;
+
+      @include onSmallDesktop {
+        top: 201px;
+        right: 162px;
+
+        width: 27px;
+      }
     }
+
     &--5 {
+      //wallet
       top: 120px;
       right: 120px;
 
       width: 131px;
-      height: 173px;
+
+      @include onSmallDesktop {
+        top: 156px;
+        right: 84px;
+
+        width: 92px;
+      }
     }
+
     &--6 {
+      //wave
       top: 256px;
       right: 208px;
 
       width: 100px;
-      height: 42px;
+
+      @include onSmallDesktop {
+        top: 332px;
+        right: 135px;
+
+        width: 70px;
+      }
     }
   }
 
   &--testing {
     &--0 {
+      //cylinder
       top: 57px;
       right: 224px;
 
       width: 67px;
-      height: 63px;
+
+      @include onSmallDesktop {
+        top: 75px;
+        right: 157px;
+
+        width: 47px;
+      }
     }
+
     &--1 {
+      //gear
       top: 82px;
       right: 14px;
 
       width: 250px;
-      height: 250px;
 
       transform: rotate(3.04deg);
+
+      @include onSmallDesktop {
+        top: 106px;
+        right: 10px;
+
+        width: 175px;
+      }
     }
+
     &--2 {
+      //sphere
       top: 127px;
       right: 224px;
 
       width: 39px;
-      height: 39px;
 
-      transform: rotate(15.72deg)
+      transform: rotate(15.72deg);
+
+      @include onSmallDesktop {
+        top: 165px;
+        right: 157px;
+
+        width: 27px;
+      }
     }
   }
 }

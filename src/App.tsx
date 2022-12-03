@@ -12,10 +12,10 @@ import { MobileVersion } from './components/MobileComponents/MobileVersion';
 export const App: React.FC = () => {
   return (
     <div className="app">
-      <Media query="(min-width: 500px)">
+      <Media query="(min-width: 1000px)">
         <DesktopVersion />
       </Media>
-      {/* <Media query="(max-width: 1450px)">
+      {/* <Media query="(max-width: 1350px)">
         <MobileVersion />
       </Media> */}
     </div>
