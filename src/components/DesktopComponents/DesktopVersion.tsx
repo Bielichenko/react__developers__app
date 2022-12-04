@@ -17,12 +17,12 @@ export const DesktopVersion = () => {
   return (
     <div className="components--desktop">
       <HeaderComponent />
-      {/* <ServicesListComponent />
-      <DevelopmentStagesComponent /> */}
-      {/* <ExamplesComponent />
+      <ServicesListComponent />
+      <DevelopmentStagesComponent />
+      <ExamplesComponent />
       <MoreInfoComponent />
       <OrderComponent />
-      <FooterComponent /> */}
+      <FooterComponent />
     </div>
   );
 };

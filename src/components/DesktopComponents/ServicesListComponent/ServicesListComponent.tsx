@@ -8,23 +8,25 @@ import './ServicesListComponent.scss';
 export const ServicesListComponent = () => {
   return (
     <div className="servicesList" id="services">
-      <h2 className="servicesList__title">
-        Что входит в услугу по созданию дизайна интернет-магазина?
-      </h2>
-      <ul className="servicesList__list">
-        {services.map((service: IService) => {
-          return (
-            <li className="servicesList__list__item" key={service.id}>
-              <ServiceItem service={service} />
-            </li>
-          );
-        })}
-      </ul>
-      <img
-        className="servicesList__bag"
-        src="media/servicesImage/bag.png"
-        alt=""
-      />
+      <div className="servicesList__container">
+        <h2 className="servicesList__title">
+          Что входит в услугу по созданию дизайна интернет-магазина?
+        </h2>
+        <ul className="servicesList__list">
+          {services.map((service: IService) => {
+            return (
+              <li className="servicesList__list__item" key={service.id}>
+                <ServiceItem service={service} />
+              </li>
+            );
+          })}
+        </ul>
+        <img
+          className="servicesList__bag"
+          src="media/servicesImage/bag.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 };

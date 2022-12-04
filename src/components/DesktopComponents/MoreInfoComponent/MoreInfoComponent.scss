@@ -1,4 +1,6 @@
 @import '../../../utils/mixins/orderButton.scss';
+@import '../../../utils/mixins/limitContainer.scss';
+@import '../../../utils/mixins/onSmallDesktop';
 
 .moreInfo {
   position: relative;
@@ -6,10 +8,20 @@
   justify-content: center;
   align-items: center;
 
-  height: 724px;
+  padding: 214px 20px 128px;
+  // height: 724px;
+
+  &__container {
+    @include limitContainer;
+  }
 
   &__textBlock {
-    margin-right: 150px;
+    width: 60%;
+    max-width: 670px;
+
+    // @include onSmallDesktop {
+    //   width: 570px;
+    // }
 
     &__title {
       margin-bottom: 53px;
@@ -17,6 +29,12 @@
       font-weight: 800;
       font-size: 32px;
       line-height: 40px;
+      color: #111111;
+
+      @include onSmallDesktop {  
+        font-size: 28px;
+        line-height: 35px;
+      }
     }
 
     &__text {
@@ -25,6 +43,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 25px;
+
+      // @include onSmallDesktop {  
+      //   font-size: 18px;
+      //   line-height: 21px;
+      // }
     }
 
     &__transferToOrder {
@@ -35,76 +58,116 @@
     }
   }
 
-  &__imagesBlock {
-    width: 412px;
-    height: 382px;
+  &__image {
+    position: absolute;
 
-    &__image {
-      position: absolute;
+    &--clock {
+      top: 213px;
+      right: 626px;
+      right: 426px;
 
-      &--clock {
-        top: 213px;
-        right: 626px;
+      width: 130px;
 
-        width: 130px;
-        height: 137px;
+      @include onSmallDesktop {
+        right: calc(426px*0.7);
+
+        width: calc(130px*0.7);
       }
+    }
 
-      &--cylinder {
-        z-index: 1;
-        top: 436px;
-        right: 256px;
+    &--cylinder {
+      z-index: 1;
+      top: 436px;
+      right: 256px;
+      right: 56px;
 
-        width: 254px;
-        height: 135px;
+      width: 254px;
+
+      @include onSmallDesktop {
+        right: calc(56px*0.7);
+
+        width: calc(254px*0.7);
       }
+    }
 
-      &--order {
-        top: 239px;
-        right: 310px;
+    &--order {
+      top: 239px;
+      right: 310px;
+      right: 126px;
 
-        width: 412px;
-        height: 382px;
+      width: 412px;
+
+      @include onSmallDesktop {
+        right: calc(126px*0.7);
+
+        width: calc(412px*0.7);
       }
+    }
 
-      &--sphereBig {
-        top: 153px;
-        left: 150px;
+    &--sphereBig {
+      top: 153px;
+      left: 150px;
 
-        width: 59px;
-        height: 58px;
+      width: 59px;
+
+      @include onSmallDesktop {
+        width: calc(width*0.7);
       }
+    }
 
-      &--spherePurple {
-        top: 137px;
-        right: 312px;
+    &--spherePurple {
+      top: 137px;
+      right: 312px;
+      right: 116px;
 
-        width: 51px;
-        height: 51px;
+      width: 51px;
+
+      @include onSmallDesktop {
+        right: calc(116px*0.7);
+
+        width: calc(51px*0.7);
       }
+    }
 
-      &--sphereSmall {
-        top: 150px;
-        right: 383px;
+    &--sphereSmall {
+      top: 150px;
+      right: 383px;
+      right: 183px;
 
-        width: 25px;
-        height: 25px;
+      width: 25px;
+
+      @include onSmallDesktop {
+        right: calc(183px*0.7);
+
+        width: calc(25px*0.7);
       }
+    }
 
-      &--taper {
-        top: 372px;
-        right: 145px;
+    &--taper {
+      top: 372px;
+      right: 145px;
+      right: 50px;
 
-        width: 71px;
-        height: 78px;
+      width: 71px;
+
+      @include onSmallDesktop {
+        right: calc(50px*0.7);
+
+        width: calc(71px*0.7);
       }
+    }
 
-      &--wave {
-        top: 463px;
-        right: 662px;
+    &--wave {
+      top: 463px;
+      right: 662px;
+      right: 426px;
 
-        width: 172px;
-        height: 83px;
+      width: 172px;
+
+      @include onSmallDesktop {
+        right: calc(426px*0.7);
+
+        width: calc(172px*0.7);
       }
     }
   }

@@ -1,3 +1,6 @@
+@import '../../../utils/mixins/limitContainer';
+@import '../../../utils/mixins/onSmallDesktop';
+
 .examples {
   position: relative;
   display: flex;
@@ -5,10 +8,16 @@
   justify-content: center;
   align-items: center;
 
-  height: 1749px;
+  // height: 1749px;
   padding: 121px;
 
   background-color: rgba(218, 236, 255, 1);
+
+  &__container {
+    @include limitContainer;
+
+    flex-direction: column;
+  }
 
   &__title {
     margin-bottom: 51px;
@@ -22,19 +31,37 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    width: 1145px;
+
+    @include onSmallDesktop {
+      width: 800px;
+    }
   }
 
   &__image {
     position: absolute;
 
     &--wave {
-      top: 301px;
+      top: 300px;
       left: 21px;
+
+      width: 130px;
+
+      @include onSmallDesktop {
+        width: 100px;
+      }
     }
 
     &--sphere {
       bottom: 245px;
-      right: 100px;
+      right: 30px;
+
+      width: 108px;
+
+      @include onSmallDesktop {
+        width: 80px;
+      }
     }
   }
 }

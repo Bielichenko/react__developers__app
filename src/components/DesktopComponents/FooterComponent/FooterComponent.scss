@@ -1,3 +1,5 @@
+@import '../../../utils/mixins/limitContainer';
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -13,14 +15,19 @@
   color: #FFFFFF;
   background-color: rgba(100, 171, 249, 1);
 
-
   &__container {
+    @include limitContainer;
+
+    flex-direction: column;
+  }
+
+  &__contactsBlock {
     display: flex;
     justify-content: space-between;
     align-items: start;
 
     width: 100%;
-    max-width: 800px;
+    // max-width: 800px;
     margin-bottom: 131px;
   }
 

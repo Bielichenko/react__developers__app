@@ -1,9 +1,11 @@
 @import '../../../utils/mixins/flexCenter.scss';
 @import '../../../utils/mixins/limitContainer';
+@import '../../../utils/mixins/onSmallDesktop';
 
 .developmentStages {
   @include flexCenter;
 
+  position: relative;
   flex-direction: column;
 
   height: 908px;
@@ -11,6 +13,7 @@
 
   &__container {
     @include limitContainer;
+
 
     max-width: 1369px;
 
@@ -21,12 +24,18 @@
     margin-bottom: 84px;
   }
 
+  &__corousel {
+    width: 100%;
+
+    margin-bottom: 128px;
+  }
+
   &__image {
     position: absolute;
 
     &--sphere {
-      top: 129px;
-      left: 187px;
+      top: 50px;
+      left: 87px;
 
       width: 67px;
       height: 67px;
@@ -38,6 +47,10 @@
 
       width: 190px;
       height: 70px;
+
+      @include onSmallDesktop {
+        bottom: 100px;
+      }
     }
   }
 }

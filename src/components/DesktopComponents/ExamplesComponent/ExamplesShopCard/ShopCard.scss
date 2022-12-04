@@ -1,16 +1,20 @@
+@import '../../../../utils/mixins/onSmallDesktop';
+@import '../../../../utils/mixins/limitContainer';
+
 .shopCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 568px;
-  height: 447px;
+  width: 556px;
+  height: calc(556px * 0.79);
+
 
 
   color: rgb(255, 255, 255);
   background-repeat: no-repeat;
-  background-size: 568px 447px;
+  background-size: 556px calc(556px * 0.79);
 
   transition: 400ms;
 
@@ -25,5 +29,12 @@
   &:hover {
     background-image: url(../../../../media/examplesImages/backGroundImage.png);
     opacity: 1;
+  }
+
+  @include onSmallDesktop {
+    width: 350px;
+    height: calc(350px * 0.79);
+
+    background-size: 350px calc(350px * 0.79);
   }
 }

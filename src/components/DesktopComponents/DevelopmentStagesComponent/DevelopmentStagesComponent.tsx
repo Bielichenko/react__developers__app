@@ -13,7 +13,9 @@ export const DevelopmentStagesComponent = () => {
         <h2 className="developmentStages__title">
           Этапы разработки интернет-магазина
         </h2>
-        <Carousel />
+        <div className="developmentStages__corousel">
+          <Carousel />
+        </div>
         <img className="developmentStages__image developmentStages__image--sphere" src="media/stagesImages/sphere.png" alt="" />
         <img className="developmentStages__image developmentStages__image--wave" src="media/stagesImages/wave.png" alt="" />
       </div>

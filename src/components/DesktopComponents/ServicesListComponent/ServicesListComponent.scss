@@ -1,3 +1,6 @@
+@import '../../../utils/mixins/onSmallDesktop';
+@import '../../../utils/mixins/limitContainer';
+
 .servicesList {
   position: relative;
   display: flex;
@@ -5,9 +8,15 @@
   justify-content: center;
   align-items: center;
 
-  padding: 120px 0;
+  padding: 120px 20px;
 
   background: #DAECFF;
+
+  &__container {
+    @include limitContainer;
+
+    flex-direction: column;
+  }
 
   &__title {
     margin-bottom: 70px;
@@ -29,7 +38,11 @@
 
   &__bag {
     position: absolute;
-    right: 145px;
+    right: 100px;
     bottom: 92px;
+
+    @include onSmallDesktop {
+      right: 50px;
+    }
   }
 }
