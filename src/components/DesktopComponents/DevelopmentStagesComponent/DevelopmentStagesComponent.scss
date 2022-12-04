@@ -1,6 +1,6 @@
-@import '../../../utils/mixins/flexCenter.scss';
-@import '../../../utils/mixins/limitContainer';
-@import '../../../utils/mixins/onSmallDesktop';
+@import '../../../utils/styles/mixins/flexCenter.scss';
+@import '../../../utils/styles/mixins/limitContainer';
+@import '../../../utils/styles/mixins/onSmallDesktop';
 
 .developmentStages {
   @include flexCenter;

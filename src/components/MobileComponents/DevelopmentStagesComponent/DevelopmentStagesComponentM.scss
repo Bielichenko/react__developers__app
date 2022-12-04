@@ -1,4 +1,4 @@
-@import '../../../utils/mixins/flexCenter.scss';
+@import '../../../utils/styles/mixins/flexCenter.scss';
 @import './StageCardM/StageCardM.scss';
 
 .developmentStagesM {
@@ -7,7 +7,9 @@
   position: relative;
   flex-direction: column;
 
-  height: 908px;
+  padding: 42px 20px 45px;
+
+  // height: 908px;
 
   &__title {
     max-width: $CARD__WIDTH;

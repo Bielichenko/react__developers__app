@@ -14,10 +14,10 @@
   background-repeat: no-repeat;
   background-size: 335px 260px;
 
-  transition: 300ms;
+  transition: 700ms;
 
-  &:hover {
-    background-image: url(../../../../media/examplesImages/backGroundImage.png);
-    opacity: 1;
+  &--hovered {
+      background-image: url(../../../../media/examplesImages/backGroundImage.png);
+      opacity: 1;
   }
 }

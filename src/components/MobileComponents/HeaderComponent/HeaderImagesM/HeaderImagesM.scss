@@ -1,4 +1,4 @@
-@import '../../../../utils/mixins/onTablet';
+@import '../../../../utils/styles/mixins/onTablet';
 
 .headerImagesM {
   &__ellipse {
@@ -21,13 +21,13 @@
 
   &__cart {
     position: absolute;
-    top: 80px;
+    top: 20px;
     right: 84px;
 
     height: 204px;
 
     @include onTablet {
-      height: 350px;
+      height: 300px;
     }
   }
 
@@ -69,7 +69,7 @@
 
       &--left {
         top: 237px;
-        left: 2px;
+        right: 300px;
 
         height: 26px;
       }

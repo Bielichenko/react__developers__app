@@ -1,3 +1,4 @@
+/* eslint-disable no-trailing-spaces */
 import React from 'react';
 import { HeaderImagesM } from '../HeaderImagesM/HeaderImagesM';
 import { HeaderMenuM } from '../HeaderMenuM/HeaderMenuM';
@@ -11,16 +12,14 @@ interface props {
 export const HeaderIntroM: React.FC<props> = ({ isMenuOpened }) => {
   return (
     <div className="headerIntroM">
-      <div className="headerIntroM__imagesContainer">
-        <HeaderImagesM />
-      </div>
+      <HeaderImagesM />
       <div className="headerIntroM__textBlock">
         <h1 className="headerIntroM__textBlock__title">
-          Разработка
+          Разработка 
           <br />
-          интернет-магазина
+          интернет-магазина 
           <br />
-          с нуля за неделю
+          с нуля за неделю 
         </h1>
         <p className="headerIntroM__textBlock__text">
           Дизайн интернет магазина, элементов микро UX,

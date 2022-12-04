@@ -7,8 +7,8 @@ import React, { FormEventHandler, useState } from 'react';
 // import TextField from '@material-ui/core/TextField';
 
 import './OrderComponent.scss';
-import { findEmailError, findNameError, findPhoneError } from '../../../utils/helpers/formValidators';
-import inputStyles from '../../../utils/stylesPacks/inputStyles';
+import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
+import inputStyles from '../../../utils/styles/stylesPacks/inputStyles';
 
 export const OrderComponent = () => {
   const [userName, setUserName] = useState('');

@@ -8,7 +8,9 @@ export const ExamplesComponentM = () => {
   return (
     <div className="examplesM" id="portfolio">
       <h2 className="examplesM__title">
-        Примеры онлайн-магазинов
+        Примеры
+        <br />
+        онлайн-магазинов
       </h2>
       <CarouselExamplesM />
       <img className="examplesM__image examplesM__image--sphere" src="media/examplesImages/sphere.png" alt="" />

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 
   // width: 100%;
@@ -11,6 +11,7 @@
   background: #DAECFF;
 
   &__title {
+    max-width: 600px;
     margin-bottom: 17px;
 
     font-weight: 800;
@@ -22,6 +23,7 @@
 
   &__list {
     width: 100%;
+    max-width: 600px;
 
     &__item {
       list-style: none;
