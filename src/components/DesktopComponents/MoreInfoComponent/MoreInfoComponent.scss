@@ -111,7 +111,7 @@
       width: 59px;
 
       @include onSmallDesktop {
-        width: calc(width*0.7);
+        width: calc(59px*0.7);
       }
     }
 
