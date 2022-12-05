@@ -35,8 +35,12 @@
       text-decoration: none;
       color: #FFFFFF;
 
+      &:not(:last-child):hover {
+        text-decoration: underline;
+      }
+
       &--order {
-        @include orderButton;
+        @include orderButton--white;
 
         width: 170px;
         height: 38px;

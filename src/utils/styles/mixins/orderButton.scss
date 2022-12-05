@@ -7,8 +7,40 @@
   text-transform: uppercase;
   color: white;
   background: #75E169;
-  border: none;
+  border: 2px solid #75E169;
   border-radius: 5px;
 
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid #67AEFC;
+  }
+
+  &:active {
+    background: #67AEFC;
+  }
+}
+
+@mixin orderButton--white {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #75E169;
+  border: 2px solid #75E169;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #FFFFFF;;
+  }
+
+  &:active {
+    color: #67AEFC;
+    background: #FFFFFF;
+  }
 }
