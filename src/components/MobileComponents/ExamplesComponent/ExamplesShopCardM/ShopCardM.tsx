@@ -24,8 +24,8 @@ export const ShopCardM: React.FC<props> = ({ shop }) => {
             className="shopCardM shopCardM--hovered"
             key={shop.id}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={() => setIsHovered(!isHovered)}
-            onKeyDown={() => setIsHovered(!isHovered)}
+            onClick={() => setIsHovered(false)}
+            onKeyDown={() => setIsHovered(false)}
             tabIndex={0}
           >
             <h4 className="shopCardM__title">Онлайн-магазин</h4>

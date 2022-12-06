@@ -1,5 +1,6 @@
 // @import '../../../../utils/styles/mixins/flexCenter.scss';
 @import '../../../../utils/styles/mixins/flexCenter.scss';
+@import '../../../../utils/styles/stylesPacks/arrowsButtonM.scss';
 // @import '../StageCardM/StageCardM.scss';
 
 .carouselM {
@@ -10,35 +11,6 @@
   // height: 150px;
   // width: 450px;
 
-
-
-  &__arrowsContainer {
-    position: relative;
-    display: flex;
-  }
-
-
-  &__arrowButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 60px;
-    height: 60px;
-
-    background-image: url(../../../../media/stagesImages/rectangle.png);
-
-    cursor: pointer;
-
-    &:first-child {
-      margin-right: 107px;
-    }
-
-    &__arrow{
-      width: 12px;
-      height: 24px;
-    }
-  }
 }
 
 .examplesShowingWindowM {

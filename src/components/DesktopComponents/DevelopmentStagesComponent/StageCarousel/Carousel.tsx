@@ -77,33 +77,43 @@ export const Carousel = () => {
           }
         </div>
       </div>
-      <div className="carousel__arrowsContainer">
-        <div
-          className="carousel__arrowButton"
-          onClick={() => goLeft()}
-          onKeyDown={() => goLeft()}
-          role="button"
-          tabIndex={0}
-        >
-          <img
-            src="media/stagesImages/arrow--left.png"
-            alt=""
-            className="carousel__arrowButton__arrow"
-          />
-        </div>
-        <div
-          className="carousel__arrowButton"
-          onClick={() => goRight()}
-          onKeyDown={() => goRight()}
-          role="button"
-          tabIndex={0}
-        >
-          <img
-            src="media/stagesImages/arrow--right.png"
-            alt=""
-            className="carousel__arrowButton__arrow"
-          />
-        </div>
+      <div className="arrowsContainer">
+        {cardsPassed > 0
+          ? (
+            <div
+              className="arrowsContainer__arrowButton arrowsContainer__arrowButton--left"
+              onClick={() => goLeft()}
+              onKeyDown={() => goLeft()}
+              role="button"
+              tabIndex={0}
+            >
+            </div>
+          )
+          : (
+            <div
+              className="arrowsContainer__arrowButtonDisabled arrowsContainer__arrowButtonDisabled--left"
+            >
+            </div>
+          )}
+
+        {cardsPassed < stages.length - 2
+          ? (
+            <div
+              className="arrowsContainer__arrowButton arrowsContainer__arrowButton--right"
+              onClick={() => goRight()}
+              onKeyDown={() => goRight()}
+              role="button"
+              tabIndex={0}
+            >
+            </div>
+
+          )
+          : (
+            <div
+              className="arrowsContainer__arrowButtonDisabled arrowsContainer__arrowButtonDisabled--right"
+            >
+            </div>
+          )}
       </div>
     </div>
   );

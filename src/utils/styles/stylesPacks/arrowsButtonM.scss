@@ -1,0 +1,54 @@
+.arrowsContainerM {
+  position: relative;
+  display: flex;
+
+  &__arrowButton {
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../../../media/stagesImages/arrow--right.png);
+    background-size: 12px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid #67AEFC;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 107px;
+    }
+
+    &:active {
+      background-color: #67AEFC;
+      background-image: url(../../../media/stagesImages/arrowActive.png);
+    }
+
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__arrowButtonDisabled {
+    width: 60px;
+    height: 60px;
+
+    background-size: 12px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../../../media/stagesImages/arrow--right.png);
+    background-color: rgb(206, 204, 204);
+    border: 2px solid rgb(206, 204, 204);
+    border-radius: 15px;
+
+    &:first-child {
+      margin-right: 107px;
+    }
+
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+}

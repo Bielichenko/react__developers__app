@@ -18,7 +18,7 @@ export const ShopCard: React.FC<props> = ({ shop }) => {
       {isHovered
         ? (
           <div
-            className="shopCard"
+            className="shopCard shopCard--hovered"
             key={shop.id}
             onMouseLeave={() => setIsHovered(false)}
           >

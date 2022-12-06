@@ -10,13 +10,11 @@
   width: 556px;
   height: calc(556px * 0.79);
 
-
-
   color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: 556px calc(556px * 0.79);
 
-  transition: 400ms;
+  transition: 700ms;
 
   &:nth-child(-n + 4) {
     margin-bottom: 38px;
@@ -26,9 +24,8 @@
     margin-right: 33px;
   }
 
-  &:hover {
+  &--hovered {
     background-image: url(../../../../media/examplesImages/backGroundImage.png);
-    opacity: 1;
   }
 
   @include onSmallDesktop {
