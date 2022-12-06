@@ -6,13 +6,20 @@
   background: #FFFFFF;
   border-radius: 15px;
 
-  cursor: pointer;
 
+  cursor: pointer;
   transition: 300ms;
 
   &:hover {
-    border-radius: 15px;
     background-color: rgb(233, 242, 244);
+
+    & .descriptionWrapper--opened .serviceItem__description {
+      background-color: rgb(233, 242, 244);
+    }
+  }
+
+  &__container {
+    @include flexCenter;
   }
 
   &__top {
@@ -23,10 +30,19 @@
     height: 61px;
     padding: 14px 24px 15px 44px;
 
-
     &__indicator {
+      width: 24px;
       height: 24px;
       margin-right: 28px;
+
+      background: #75E169;
+      border-radius: 50%;
+
+      transition: 800ms;
+
+      &--opened {
+        background: #67AEFC;
+      }
     }
 
     &__title {
@@ -39,23 +55,52 @@
 
     &__arrow {
       height: 13px;
+
+      transition: 300ms;
+
+      &--opened {
+        transform: rotate(180deg);
+      }
     }
   }
 
   &__description {
+    transform: translate(0, -100%);
     display: flex;
-    // justify-content: center;
     align-items: center;
 
-    padding: 15px 70px 50px 55px;
+    padding: 18px 70px 54px 55px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
 
-    &__line {
-      margin-right: 40px;
+    transition: 500ms;
+
+    &:hover {
+      background-color: rgb(233, 242, 244);
+    }
+
+    &--opened {
+      transform: translate(0);
+    }
+
+    &__text {
+      padding: 0 0 0 25px;
+      background-image: url('../../../../media/servicesImage/line.png');
+      background-repeat: no-repeat;
+      background-size: 1px 100%;
     }
   }
-
 }
 
-.container {
-  @include flexCenter;
+.descriptionWrapper {
+  position: relative;
+
+  height: 0px;
+  
+  overflow: hidden;
+  background: #DAECFF;
+
+  &--opened {
+    height: max-content;
+  }
 }

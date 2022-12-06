@@ -1,5 +1,9 @@
+/* eslint-disable max-len */
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
+import cn from 'classnames';
+
 import { IService } from '../../../../types/IService';
 
 import './ServiceItem.scss';
@@ -10,54 +14,53 @@ interface props {
 
 export const ServiceItem: React.FC<props> = ({ service }) => {
   const [isOpened, setIsOpened] = useState(false);
+  const [isWrapperActive, setIsWrapperActive] = useState(false);
+
+  const handleServiceItemClick = (isItemOpenNow: boolean) => {
+    if (isItemOpenNow === false) {
+      setIsOpened(true);
+      setIsWrapperActive(true);
+    }
+
+    function hideWrapper() {
+      setIsWrapperActive(false);
+    }
+
+    if (isItemOpenNow === true) {
+      setIsOpened(false);
+
+      setTimeout(hideWrapper, 400);
+    }
+  };
 
   return (
     <>
-      {
-        isOpened
-          ? (
+      <div
+        className="serviceItem"
+        onClick={() => handleServiceItemClick(isOpened)}
+        onKeyDown={() => handleServiceItemClick(isOpened)}
+        role="button"
+        tabIndex={0}
+      >
+        <div className="serviceItem__top">
+          <div className="serviceItem__container">
+            <div className={cn('serviceItem__top__indicator', { 'serviceItem__top__indicator--opened': isOpened })} />
             <div
-              className="serviceItem serviceItem--opened"
-              onClick={() => setIsOpened(!isOpened)}
-              onKeyDown={() => setIsOpened(!isOpened)}
-              role="button"
-              tabIndex={0}
+              className="serviceItem__top__title"
             >
-              <div className="serviceItem__top">
-                <img src="media/servicesImage/indicator--blue.png" alt="" className="serviceItem__indicator" />
-                <div className="serviceItem__name">
-                  {service.title}
-                </div>
-                <img src="media/servicesImage/arrow--opened.png" alt="" className="serviceItem__arrow" />
-              </div>
-              <div className="serviceItem__description">
-                <img src="media/servicesImage/line.png" alt="" className="serviceItem__description__line" />
-                {service.description}
-              </div>
+              {service.title}
             </div>
-          )
-          : (
-            <div
-              className="serviceItem serviceItem--closed"
-              onClick={() => setIsOpened(!isOpened)}
-              onKeyDown={() => setIsOpened(!isOpened)}
-              role="button"
-              tabIndex={0}
-            >
-              <div className="serviceItem__top">
-                <div className="container">
-                  <img src="media/servicesImage/indicator--green.png" alt="" className="serviceItem__top__indicator" />
-                  <div
-                    className="serviceItem__top__title"
-                  >
-                    {service.title}
-                  </div>
-                </div>
-                <img src="media/servicesImage/arrow.png" alt="" className="serviceItem__top__arrow" />
-              </div>
-            </div>
-          )
-      }
+          </div>
+          <img src="media/servicesImage/arrow--opened.png" alt="" className={cn('serviceItem__top__arrow', { 'serviceItem__top__arrow--opened': isOpened })} />
+        </div>
+        <div className={cn('descriptionWrapper', { 'descriptionWrapper--opened': isWrapperActive })}>
+          <div className={cn('serviceItem__description', { 'serviceItem__description--opened': isOpened })}>
+            <p className="serviceItem__description__text">
+              {service.description}
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
