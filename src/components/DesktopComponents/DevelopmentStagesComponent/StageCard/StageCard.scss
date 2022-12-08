@@ -1,9 +1,6 @@
 @import '../../../../utils/styles/mixins/flexCenter.scss';
 @import '../../../../utils/styles/mixins/onSmallDesktop';
 
-// $CARD__WIDTH: 672px;
-// $CARD__HEIGHT: 389PX;
-
 .stageCard {
   position: relative;
   display: flex;
@@ -16,13 +13,9 @@
     padding: 0 0 0 20px;
   }
 
-  // width: 45%;
-  // height: $CARD__HEIGHT;
-
   margin-right: 25px;
 
   background-image: url(../../../../media/stagesImages/rectangle--big.png);
-  // background-size: $CARD__WIDTH $CARD__HEIGHT;
   background-repeat: no-repeat;
 
   &__textContainer {
@@ -91,48 +84,58 @@
       //barcode
       z-index: 1;
       top: 108px;
-      right: 164px;
+      right: 130px;
 
       width: 130px;
+      height: 91px;
+
+      transform: rotate(-1deg);
 
       @include onSmallDesktop {
         z-index: 1;
-        top: 160px;
-        right: 114px;
+        // top: 170px;
+        right: calc(120px*0.7);
 
-        width: 91px;
+        width: calc(130px*0.9);
+        height: calc(91px*0.9);
       }
     }
 
     &--1 {
       //cylinder
-      top: 234px;
-      right: 85px;
+      top: 230px;
+      right: 80px;
 
       width: 72px;
       height: 69px;
 
+      transform: rotate(-1deg);
+
       @include onSmallDesktop {
         top: 210px;
-        right: 55px;
+        right: calc(80px*0.7);
 
-        width: 50px;
+        width: calc(72px*0.9);
+        height: calc(69px*0.9);
       }
     }
 
     &--2 {
       //cylinder--purple
-      top: 261px;
-      right: 234px;
+      top: 245px;
+      right: 190px;
 
       width: 71px;
       height: 36px;
 
-      @include onSmallDesktop {
-        top: 230px;
-        right: 160px;
+      transform: rotate(-1deg);
 
-        width: 50px;
+      @include onSmallDesktop {
+        top: 225px;
+        right: calc(210px*0.7);
+
+        width: calc(71px*0.9);
+        height: calc(36px*0.9);
       }
     }
 
@@ -142,27 +145,31 @@
       right: 97px;
 
       width: 144px;
+      height: 215px;
+
+      transform: rotate(-1deg);
 
       @include onSmallDesktop {
-        top: 140px;
-        right: 68px;
+        // top: calc(75px*2);
+        right: calc(97px*0.7);
 
-        width: 100px;
+        width: calc(144px*0.9);
+        height: calc(215px*0.9);
       }
     }
 
     &--4 {
       //sphere--big
       top: 42px;
-      right: 240px;
+      right: 200px;
 
       width: 39px;
 
       @include onSmallDesktop {
-        top: 100px;
-        right: 168px;
+        // top: 120px;
+        right: 140px;
 
-        width: 27px;
+        width: calc(39px*0.9);
       }
     }
 
@@ -174,10 +181,10 @@
       width: 18px;
 
       @include onSmallDesktop {
-        top: 206px;
-        right: 43px;
+        // top: 200px;
+        right: calc(62px*0.7);
 
-        width: 13px;
+        width: calc(18px*0.9);
       }
     }
 
@@ -188,13 +195,15 @@
       right: 39px;
 
       width: 109px;
+      height: 45px;
 
       @include onSmallDesktop {
         z-index: -1;
-        top: 117px;
-        right: 27px;
+        top: 85px;
+        right: calc(39px*0.7);
 
-        width: 76px;
+        width: calc(109px*0.9);
+        height: calc(45px*0.9);
       }
     }
   }
@@ -208,25 +217,26 @@
       width: 27px;
 
       @include onSmallDesktop {
-        top: 175px;
-        right: 48px;
+        top: 135px;
+        right: calc(69px*0.7);
 
-        width: 19px;
+        width: calc(19px*0.9);
       }
     }
 
     &--1 {
       //deposit--small
+      z-index: 2;
       top: 268px;
-      right: 145px;
+      right: 140px;
 
       width: 24px;
 
       @include onSmallDesktop {
-        top: 350px;
-        right: 102px;
+        top: 210px;
+        right: calc(130px*0.7);
 
-        width: 17px;
+        width: calc(17px*0.9);
       }
     }
 
@@ -240,10 +250,10 @@
 
       @include onSmallDesktop {
         z-index: 1;
-        top: 257px;
-        right: 41px;
+        top: 165px;
+        right: calc(58px*0.7);
 
-        width: 69px;
+        width: calc(69px*0.9);
       }
     }
 
@@ -255,10 +265,10 @@
       width: 50px;
 
       @include onSmallDesktop {
-        top: 135px;
-        right: 150px;
+        top: 104px;
+        right: calc(214px*0.7);
 
-        width: 35px;
+        width: calc(35px*0.9);
       }
     }
 
@@ -270,10 +280,10 @@
       width: 38px;
 
       @include onSmallDesktop {
-        top: 201px;
-        right: 162px;
+        top: 180px;
+        right: calc(220px*0.7);
 
-        width: 27px;
+        width: calc(27px*0.9);
       }
     }
 
@@ -285,10 +295,10 @@
       width: 131px;
 
       @include onSmallDesktop {
-        top: 156px;
-        right: 84px;
+        top: 120px;
+        right: calc(120px*0.7);
 
-        width: 92px;
+        width: calc(92px*0.9);
       }
     }
 
@@ -300,10 +310,10 @@
       width: 100px;
 
       @include onSmallDesktop {
-        top: 332px;
-        right: 135px;
+        top: 210px;
+        right: calc(208px*0.7);
 
-        width: 70px;
+        width: calc(70px*0.9);
       }
     }
   }
@@ -314,13 +324,13 @@
       top: 57px;
       right: 224px;
 
-      width: 67px;
+      width: 60px;
 
       @include onSmallDesktop {
         top: 75px;
-        right: 157px;
+        right: calc(190px*0.7);
 
-        width: 47px;
+        width: calc(60px*0.9);
       }
     }
 
@@ -335,9 +345,9 @@
 
       @include onSmallDesktop {
         top: 106px;
-        right: 10px;
+        right: calc(14px*0.7);
 
-        width: 175px;
+        width: calc(175px*0.9);
       }
     }
 
@@ -351,10 +361,10 @@
       transform: rotate(15.72deg);
 
       @include onSmallDesktop {
-        top: 165px;
-        right: 157px;
+        top: 140px;
+        right: calc(200px*0.7);
 
-        width: 27px;
+        width: calc(39px*0.9);
       }
     }
   }

@@ -1,5 +1,6 @@
 @import '../../../utils/styles/mixins/orderButton.scss';
 @import '../../../utils/styles/mixins/onSmallDesktop';
+@import '../../../utils/styles/blocks/formStyles.scss';
 
 .order {
   position: relative;
@@ -8,7 +9,7 @@
   justify-content: center;
   align-items: center;
 
-  // height: 774px;
+  padding: 180px 180px 128px;
 
   background-color: #DAECFF;
 
@@ -16,8 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding: 180px 180px 128px;
 
     &__title {
       margin-bottom: 10px;
@@ -28,7 +27,7 @@
     }
 
     &__text {
-      margin-bottom: 27px;
+      margin-bottom: 5px;
 
       font-weight: 400;
       font-size: 18px;
@@ -39,7 +38,7 @@
     &__form {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 470px;
     }
 
     &__orderButton {
@@ -57,79 +56,60 @@
 
     &--phone {
       top: 262px;
-      left: 150px;
+      left: 232px;
 
-      width: 206px;
+      width: 300px;
 
       transform: rotate(-8.9deg);
 
+      @media (max-width: 1750px) {
+        left: 100px;
+      }
+
       @include onSmallDesktop {
-        top: 262px;
-        left: calc(150px * 0.7);
-  
-        width: calc(206px * 0.7);
+        top: 300px;
+        left: 50px;
+
+        width: calc(300px * 0.7);
       }
     }
 
     &--sphere {
       top: 363px;
-      right: 210px;
+      right: 410px;
 
       width: 67px;
 
       transform: rotate(3.22deg);
 
+      @media (max-width: 1750px) {
+        right: 210px;
+      }
+
       @include onSmallDesktop {
         top: 363px;
         right: calc(210px * 0.7);
-  
+
         width: calc(67px * 0.7);
       }
     }
 
     &--wave {
       top: 289px;
-      right: 205px;
+      right: 405px;
 
       width: 177px;
 
-      transform: rotate(-7.91deg);
+      @media (max-width: 1750px) {
+        right: 205px;
+      }
 
       @include onSmallDesktop {
-        top: 289px;
-        right: calc(205px * 0.7);
-  
+        top: 300px;
+        right: calc(190px * 0.7);
+
         width: calc(177px * 0.7);
       }
     }
-  }
-}
-
-.error {
-  position: absolute;
-
-  visibility: hidden;
-  font-size: 12px;
-  color: red;
-
-  &--name {
-    top: 375px;
-    left: 50;
-
-    visibility: visible;
-  }
-
-  &--phone {
-    top: 450px;
-    left: 50;
-
-    visibility: visible;
-  }
-
-  &--email {
-    top: 526px;
-    left: 50;
-
-    visibility: visible;
   }
 }

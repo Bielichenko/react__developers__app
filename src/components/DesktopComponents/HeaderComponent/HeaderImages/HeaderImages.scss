@@ -8,23 +8,27 @@
       top: 82px;
       right: 0;
 
-      height: 550px;
+      width: 609px;
 
       @include onSmallDesktop {
         top: calc(82px*2);
 
-        height: calc(550px*0.7);
+        width: calc(609px*0.7);
       }
     }
 
     &--white {
-      bottom: 0px;
+      bottom: 41px;
       left: 0;
 
-      height: 185px;
+      width: 149px;
+
+      @media (max-width: 1450px) {
+        bottom: 10px;
+      }
 
       @include onSmallDesktop {
-        height: calc(185px*0.7);
+        width: calc(149px*0.7);
       }
     }
   }
@@ -32,15 +36,19 @@
   &__cart {
     position: absolute;
     top: 111px;
-    right: 250px;
+    right: 305px;
 
-    height: 499px;
+    width: 620px;
+
+    @media (max-width: 1800px) {
+      right: calc(305px - 200px);
+    }
 
     @include onSmallDesktop {
-      top: calc(111px*2);
-      right: calc(250px*0.7);
+      top: 170px;
+      right: calc(305px*0.3);
 
-      height: calc(499px*0.7);
+      width: calc(620px*0.7);
     }
   }
 
@@ -48,43 +56,57 @@
     position: absolute;
 
     &--blue {
-      top: 350px;
+      top: 413px;
       right: 249px;
 
-      height: 58px;
+      width: 59px;
+
+      @media (max-width: 1800px) {
+        right: calc(249px - 200px);
+      }
 
       @include onSmallDesktop {
-        right: calc(249px*0.7);
+        top: 380px;
+        right: calc(249px*0.3);
 
-        height: calc(58px*0.7);
+        width: calc(59px*0.7);
       }
 
       &--left {
-        top: 80px;
-        left: 100px;
+        top: 120px;
+        left: 239px;
 
-        height: 53px;
+        width: 53px;
+
+        @media (max-width: 1800px) {
+          top: 60px;
+          left: 60px;
+        }
 
         @include onSmallDesktop {
           top: 80px;
           left: 50px;
 
-          height: calc(53px*0.7);
+          width: calc(53px*0.7);
         }
       }
     }
 
     &--purple {
-      top: 300px;
+      top: 364px;
       right: 171px;
 
-      height: 37px;
+      width: 37px;
+
+      @media (max-width: 1800px) {
+        right: 0px;
+      }
 
       @include onSmallDesktop {
-        top: 300px;
-        right: calc(171px*0.7);
+        top: 340px;
+        right: calc(171px*0.3);
 
-        height: calc(37px*0.7);
+        width: calc(37px*0.7);
       }
     }
   }
@@ -94,44 +116,56 @@
 
     &--blue {
       z-index: -1;
-      top: 370px;
-      right: 600px;
+      top: 428px;
+      right: 755px;
 
-      height: 70px;
+      width: 190px;
+
+      @media (max-width: 1800px) {
+        right: calc(755px - 200px);
+      }
 
       @include onSmallDesktop {
-        top: 410px;
-        right: calc(600px*0.7);
+        top: 415px;
+        right: 390px;
 
-        height: calc(70px*0.7);
+        width: calc(190px*0.7);
       }
 
     }
 
     &--purple {
-      top: 240px;
-      right: 220px;
+      top: 275px;
+      right: 227px;
 
-      height: 81px;
+      width: 222px;
+
+      @media (max-width: 1800px) {
+        right: calc(227px - 200px);
+      }
 
       @include onSmallDesktop {
         top: 300px;
-        right: calc(220px*0.7);
+        right: calc(180px*0.3);
 
-        height: calc(81px*0.7);
+        width: calc(222px*0.7);
       }
 
       &--left {
-        bottom: 45px;
-        left: 65px;
+        bottom: 95px;
+        left: 60px;
 
-        height: 63px;
+        width: 171px;
+
+        @media (max-width: 1450px) {
+          bottom: 60px;
+        }
 
         @include onSmallDesktop {
           bottom: 35px;
-          left: calc(65px*0.7);
+          left: calc(60px*0.7);
   
-          height: calc(63px*0.7);
+          width: calc(171px*0.7);
         }
       }
     }
@@ -142,15 +176,19 @@
 
     &--blue {
       top: 92px;
-      right: 530px;
+      right: 574px;
 
-      height: 57px;
+      width: 114px;
+
+      @media (max-width: 1800px) {
+        right: calc(574px - 200px);
+      }
 
       @include onSmallDesktop {
-        top: calc(92px*2);
-        right: calc(530px*0.7);
+        top: 150px;
+        right: 300px;
 
-        height: calc(57px*0.7);
+        width: calc(114px*0.7);
       }
     }
 
@@ -158,13 +196,17 @@
       bottom: 106px;
       right: 273px;
 
-      height: 83px;
+      width: 161px;
+
+      @media (max-width: 1800px) {
+        right: calc(273px - 200px);
+      }
 
       @include onSmallDesktop {
         bottom: 200px;
-        right: calc(273px*0.7);
+        right: calc(273px*0.3);
 
-        height: calc(83px*0.7);
+        width: calc(161px*0.7);
       }
     }
   }

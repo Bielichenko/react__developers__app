@@ -8,7 +8,7 @@
   align-items: center;
 
   min-height: 766px;
-  padding: 10px 25px;
+  padding: 171px 25px 180px;
 
 
   &__container {
@@ -21,8 +21,6 @@
   }
 
   &__textBlock {
-    // max-width: 45%;
-
     &__title {
       margin-bottom: 20px;
 
@@ -47,6 +45,10 @@
       line-height: 22px;
 
       color: #000000;
+
+      @include onSmallDesktop {
+        margin-bottom: 38px;
+      }
     }
 
     &__orderButton {
@@ -56,8 +58,4 @@
       width: 270px;
     }
   }
-
-  // &__imagesContainer {
-  //   width: 509px;
-  // }
 }

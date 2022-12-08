@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { IStage } from '../../../types/IStage';
 
 export const stages: IStage[] = [

@@ -29,9 +29,9 @@
   }
 
   @include onSmallDesktop {
-    width: 350px;
-    height: calc(350px * 0.79);
+    width: 450px;
+    height: calc(450px * 0.79);
 
-    background-size: 350px calc(350px * 0.79);
+    background-size: 450px calc(450px * 0.79);
   }
 }

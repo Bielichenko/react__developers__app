@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
 
-  padding: 214px 20px 128px;
+  padding: 214px 20px 180px;
   // height: 724px;
 
   &__container {
@@ -31,7 +31,9 @@
       line-height: 40px;
       color: #111111;
 
-      @include onSmallDesktop {  
+      @include onSmallDesktop {
+        margin-bottom: 30px;
+
         font-size: 28px;
         line-height: 35px;
       }
@@ -44,17 +46,16 @@
       font-size: 18px;
       line-height: 25px;
 
-      // @include onSmallDesktop {  
-      //   font-size: 18px;
-      //   line-height: 21px;
-      // }
+      @include onSmallDesktop {
+        margin-bottom: 35px;
+      }
     }
 
     &__transferToOrder {
       @include orderButton;
 
-      height: 60px;
       width: 270px;
+      height: 60px;
     }
   }
 
@@ -64,12 +65,15 @@
     &--clock {
       top: 213px;
       right: 626px;
-      right: 426px;
 
       width: 130px;
 
+      @media (max-width: 1700px) {
+        right: calc(626px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(426px*0.7);
+        right: 300px;
 
         width: calc(130px*0.7);
       }
@@ -79,12 +83,16 @@
       z-index: 1;
       top: 436px;
       right: 256px;
-      right: 56px;
 
       width: 254px;
 
+      @media (max-width: 1700px) {
+        right: calc(256px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(56px*0.7);
+        top: 370px;
+        right: 50px;
 
         width: calc(254px*0.7);
       }
@@ -93,12 +101,15 @@
     &--order {
       top: 239px;
       right: 310px;
-      right: 126px;
 
       width: 412px;
 
+      @media (max-width: 1700px) {
+        right: calc(310px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(126px*0.7);
+        right: 100px;
 
         width: calc(412px*0.7);
       }
@@ -118,12 +129,15 @@
     &--spherePurple {
       top: 137px;
       right: 312px;
-      right: 116px;
 
       width: 51px;
 
+      @media (max-width: 1700px) {
+        right: calc(312px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(116px*0.7);
+        right: 100px;
 
         width: calc(51px*0.7);
       }
@@ -132,12 +146,15 @@
     &--sphereSmall {
       top: 150px;
       right: 383px;
-      right: 183px;
 
       width: 25px;
 
+      @media (max-width: 1700px) {
+        right: calc(383px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(183px*0.7);
+        right: 150px;
 
         width: calc(25px*0.7);
       }
@@ -146,12 +163,16 @@
     &--taper {
       top: 372px;
       right: 145px;
-      right: 50px;
 
       width: 71px;
 
+      @media (max-width: 1700px) {
+        right: 0;
+      }
+
       @include onSmallDesktop {
-        right: calc(50px*0.7);
+        top: 320px;
+        right: 5px;
 
         width: calc(71px*0.7);
       }
@@ -160,12 +181,16 @@
     &--wave {
       top: 463px;
       right: 662px;
-      right: 426px;
 
       width: 172px;
 
+      @media (max-width: 1700px) {
+        right: calc(662px - 200px);
+      }
+
       @include onSmallDesktop {
-        right: calc(426px*0.7);
+        top: 400px;
+        right: 350px;
 
         width: calc(172px*0.7);
       }

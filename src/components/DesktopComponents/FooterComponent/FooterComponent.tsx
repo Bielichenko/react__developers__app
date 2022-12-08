@@ -6,35 +6,51 @@ import './FooterComponent.scss';
 export const FooterComponent = () => {
   return (
     <div className="footer" id="footer">
-      <div className="footer__container">
-        <div className="footer__contactsBlock">
+      <div className="footer__limitContainer">
+        <div className="footer__contactsContainer">
           <div className="footer__logos">
-            <div className="footer__logos__logo">
+            <div className="footer__logos__mainLogo">
               <LogoComponent />
             </div>
-            <div className="footer__logos__messangersImages">
-              <img src="media/footerImages/messengersImages/1.png" alt="1" />
-              <img src="media/footerImages/messengersImages/2.png" alt="2" />
-              <img src="media/footerImages/messengersImages/3.png" alt="3" />
-              <img src="media/footerImages/messengersImages/4.png" alt="4" />
-              <img src="media/footerImages/messengersImages/5.png" alt="5" />
+            <div className="footer__logos__messangersIcons messangersIcons">
+              <div className="messangersIcons__wrapper">
+                <a rel="noopener noreferrer" href="https://www.instagram.com/" target="_blank"><img className="messangersIcons__wrapper__icon" src="media/footerImages/messengersImages/inst.png" alt="1" /></a>
+              </div>
+              <div className="messangersIcons__wrapper">
+                <a href="https://uk-ua.facebook.com/" rel="noopener noreferrer" target="_blank"><img className="messangersIcons__wrapper__icon" src="media/footerImages/messengersImages/fb.png" alt="1" /></a>
+              </div>
+              <div className="messangersIcons__wrapper">
+                <a href="https://web.telegram.org/" rel="noopener noreferrer" target="_blank"><img className="messangersIcons__wrapper__icon" src="media/footerImages/messengersImages/tg.png" alt="1" /></a>
+              </div>
+              <div className="messangersIcons__wrapper">
+                <a href="https://www.viber.com/ru/" rel="noopener noreferrer" target="_blank">
+                  <img className="messangersIcons__wrapper__icon" src="media/footerImages/messengersImages/vb.png" alt="1" />
+                </a>
+              </div>
+              <div className="messangersIcons__wrapper">
+                <a href="https://www.whatsapp.com/?lang=ru" rel="noopener noreferrer" target="_blank">
+                  <img className="messangersIcons__wrapper__icon" src="media/footerImages/messengersImages/wtu.png" alt="1" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="footer__viberContacts viberContacts">
-            <div className="footer__viberContacts__item">
-              <img src="media/footerImages/messengersImages/3.png" alt="3" />
-              <p>Валерия: +380505859409</p>
+            <div className="viberContacts__contact">
+              <img className="viberContacts__contact__icon" src="media/footerImages/messengersImages/vb.png" alt="3" />
+              <a className="viberContacts__contact__phone" href="tel:380505859409">Валерия: +380505859409</a>
             </div>
-            <div className="footer__viberContacts__item">
-              <img src="media/footerImages/messengersImages/3.png" alt="3" />
-              <p>Анна: +380505859409</p>
+            <div className="viberContacts__contact">
+              <img className="viberContacts__contact__icon" src="media/footerImages/messengersImages/vb.png" alt="3" />
+              <a className="viberContacts__contact__phone" href="tel:+380505859409">Анна: +380505859409</a>
             </div>
-            <div className="footer__viberContacts__item">
-              <img src="media/footerImages/messengersImages/3.png" alt="3" />
-              <p>Валерия: +380505859409</p>
+            <div className="viberContacts__contact">
+              <img className="viberContacts__contact__icon" src="media/footerImages/messengersImages/vb.png" alt="3" />
+              <a className="viberContacts__contact__phone" href="tel:380505859409">Валерия: +380505859409</a>
             </div>
           </div>
-          <p className="footer__email">hr@dv-s.com</p>
+          <div className="footer__emailWrapper">
+            <a className="footer__email" href="mailto:hr@dv-s.com">hr@dv-s.com</a>
+          </div>
         </div>
         <p className="footer__convention">Developers 2018-2022 © All rights reserved</p>
       </div>

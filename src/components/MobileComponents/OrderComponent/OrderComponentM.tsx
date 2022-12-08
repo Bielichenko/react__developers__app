@@ -9,7 +9,7 @@ import React, { FormEventHandler, useState } from 'react';
 
 import './OrderComponentM.scss';
 import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
-import inputStyles from '../../../utils/styles/stylesPacks/inputStyles';
+import inputStyles from '../../../utils/styles/blocks/inputStyles';
 
 export const OrderComponentM = () => {
   const [userName, setUserName] = useState('');
@@ -49,11 +49,11 @@ export const OrderComponentM = () => {
     setEmailError(findEmailError(userEmail));
   };
 
-  const removeFormErrors = () => {
-    setNameError('');
-    setPhoneError('');
-    setEmailError('');
-  };
+  // const removeFormErrors = () => {
+  //   setNameError('');
+  //   setPhoneError('');
+  //   setEmailError('');
+  // };
 
   const isFormValid = () => {
     if (!findNameError(userName) && !findPhoneError(userPhone) && !findEmailError(userEmail)) {

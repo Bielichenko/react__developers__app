@@ -8,7 +8,7 @@ import React, { FormEventHandler, useState } from 'react';
 
 import './OrderComponent.scss';
 import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
-import inputStyles from '../../../utils/styles/stylesPacks/inputStyles';
+import inputStyles from '../../../utils/styles/blocks/inputStyles';
 
 export const OrderComponent = () => {
   const [userName, setUserName] = useState('');
@@ -48,11 +48,11 @@ export const OrderComponent = () => {
     setEmailError(findEmailError(userEmail));
   };
 
-  const removeFormErrors = () => {
-    setNameError('');
-    setPhoneError('');
-    setEmailError('');
-  };
+  // const removeFormErrors = () => {
+  //   setNameError('');
+  //   setPhoneError('');
+  //   setEmailError('');
+  // };
 
   const isFormValid = () => {
     if (!findNameError(userName) && !findPhoneError(userPhone) && !findEmailError(userEmail)) {
@@ -66,7 +66,6 @@ export const OrderComponent = () => {
     e.preventDefault();
 
     if (isFormValid()) {
-      removeFormErrors();
       resetForm();
       setRequestWasSent(true);
     }
@@ -87,9 +86,9 @@ export const OrderComponent = () => {
           <br />
           вам в их достижении
         </p>
-        {
-          requestWasSent ? <div className="p">Заявка была отправлена!</div> : null
-        }
+
+        <div className={cn('callRequest', { 'callRequest--active': requestWasSent })}> Спасибо, Ваша заявка была отправлена!</div>
+
         <form
           className="order__formBlock__form"
           noValidate
@@ -107,7 +106,7 @@ export const OrderComponent = () => {
             value={userName}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--name': nameError })}>{nameError}</p>
+          <p className={cn('error', { 'error--active': nameError })}>{nameError}</p>
           <TextField
             className="form__input"
             onFocus={() => setPhoneError('')}
@@ -120,7 +119,7 @@ export const OrderComponent = () => {
             value={userPhone}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--phone': phoneError })}>{phoneError}</p>
+          <p className={cn('error', { 'error--active': phoneError })}>{phoneError}</p>
           <TextField
             className="form__input"
             onFocus={() => setEmailError('')}
@@ -133,7 +132,7 @@ export const OrderComponent = () => {
             value={userEmail}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--email': emailError })}>{emailError}</p>
+          <p className={cn('error', { 'error--active': emailError })}>{emailError}</p>
           <button className="order__formBlock__orderButton" type="submit">Отправить</button>
         </form>
       </div>

@@ -1,0 +1,35 @@
+.error {
+  width: 100%;
+  height: max-content;
+  min-height: 20px;
+  padding: 3px;
+  
+  visibility: hidden;
+  color: red;
+  font-size: 15px;
+  line-height: 20px;
+
+  &--active {
+    visibility: visible;
+  }
+}
+
+.callRequest {
+  text-align: center;
+  width: 100%;
+
+  margin-bottom: 6px;
+  padding: 3px;
+
+  visibility: hidden;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  background-color: #75E169;
+  // border-radius: 5px;
+
+  &--active {
+    visibility: visible;
+  }
+}

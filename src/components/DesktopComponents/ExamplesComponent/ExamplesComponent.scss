@@ -9,7 +9,7 @@
   align-items: center;
 
   // height: 1749px;
-  padding: 121px;
+  padding: 121px 25px;
 
   background-color: rgba(218, 236, 255, 1);
 
@@ -35,7 +35,7 @@
     width: 1145px;
 
     @include onSmallDesktop {
-      width: 800px;
+      width: 933px;
     }
   }
 
@@ -46,21 +46,27 @@
       top: 300px;
       left: 21px;
 
-      width: 130px;
+      width: 200px;
 
-      @include onSmallDesktop {
-        width: 100px;
+      transform: rotate(-1deg);
+
+      @media (max-width: 1650px) {
+        display: none
       }
     }
 
     &--sphere {
       bottom: 245px;
-      right: 30px;
+      right: 122px;
 
       width: 108px;
 
-      @include onSmallDesktop {
-        width: 80px;
+      @media (max-width: 1700px) {
+        right: 30px;
+      }
+
+      @media (max-width: 1500px) {
+        display: none
       }
     }
   }

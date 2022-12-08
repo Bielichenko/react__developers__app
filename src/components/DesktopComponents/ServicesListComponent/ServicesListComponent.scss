@@ -8,8 +8,6 @@
   justify-content: center;
   align-items: center;
 
-  // margin: 120px 0;
-  // height: 1200px;
   padding: 120px 20px;
 
   background: #DAECFF;
@@ -21,8 +19,6 @@
   }
 
   &__title {
-    position: relative;
-    // width: 61%;
     margin-bottom: 70px;
 
     font-weight: 800;
@@ -42,8 +38,13 @@
 
   &__bag {
     position: absolute;
-    right: -170px;
-    bottom: -445px;
+    top: 463px;
+    right: 140px;
+    
+    @media (max-width: 1800px) {
+      right: 30px;
+    }
+    
 
     @media (max-width: 1500px) {
       display: none;

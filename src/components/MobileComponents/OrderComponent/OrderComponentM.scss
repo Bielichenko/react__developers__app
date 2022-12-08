@@ -102,31 +102,31 @@
   }
 }
 
-.error {
-  position: absolute;
+// .error {
+//   position: absolute;
 
-  visibility: hidden;
-  font-size: 12px;
-  color: red;
+//   visibility: hidden;
+//   font-size: 12px;
+//   color: red;
 
-  &--name {
-    top: 240px;
-    left: 50;
+//   &--name {
+//     top: 240px;
+//     left: 50;
 
-    visibility: visible;
-  }
+//     visibility: visible;
+//   }
 
-  &--phone {
-    top: 317px;
-    left: 50;
+//   &--phone {
+//     top: 317px;
+//     left: 50;
 
-    visibility: visible;
-  }
+//     visibility: visible;
+//   }
 
-  &--email {
-    top: 392px;
-    left: 50;
+//   &--email {
+//     top: 392px;
+//     left: 50;
 
-    visibility: visible;
-  }
-}
+//     visibility: visible;
+//   }
+// }

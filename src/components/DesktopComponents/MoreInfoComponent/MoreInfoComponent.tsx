@@ -22,9 +22,9 @@ export const MoreInfoComponent = () => {
             {/* <br /> */}
             визуализировать ваш веб проект.
           </p>
-          <button type="button" className="moreInfo__textBlock__transferToOrder">
-            Оставить заявку
-          </button>
+          <a href="#order" className="moreInfo__textBlock__transferToOrder">
+            Заказать
+          </a>
         </div>
         <img src="media/moreInfoImages/clock.png" className='moreInfo__image moreInfo__image--clock' alt="" />
         <img src="media/moreInfoImages/cylinder.png" className='moreInfo__image moreInfo__image--cylinder' alt="" />

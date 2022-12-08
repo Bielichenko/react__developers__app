@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
 import { LogoComponent } from '../../LogoComponent/LogoComponent';
 
 import './HeaderNav.scss';
@@ -8,7 +6,7 @@ import './HeaderNav.scss';
 export const HeaderNav = () => {
   return (
     <div className="headerNav">
-      <div className="headerNav__container">
+      <div className="headerNav__limitContainer">
         <div className="headerNav__logo">
           <LogoComponent />
         </div>

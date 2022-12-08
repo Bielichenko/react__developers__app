@@ -1,8 +1,11 @@
 @mixin orderButton {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -22,10 +25,12 @@
 }
 
 @mixin orderButton--white {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -36,7 +41,8 @@
   cursor: pointer;
 
   &:hover {
-    border: 2px solid #FFFFFF;;
+    border: 2px solid #FFFFFF;
+    ;
   }
 
   &:active {
