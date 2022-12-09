@@ -13,6 +13,7 @@ export const HeaderImagesM = () => {
 
       <img className="headerImagesM__sphere headerImagesM__sphere--blue" src="media/headerImage/sphere--blue.png" alt="" />
       <img className="headerImagesM__sphere headerImagesM__sphere--purple" src="media/headerImage/sphere--purple.png" alt="" />
+      <img className="headerImagesM__sphere headerImagesM__sphere--purple--small" src="media/headerImage/sphere--purple.png" alt="" />
 
       <img className="headerImagesM__wave headerImagesM__wave--blue" src="media/headerImage/wave--blue.png" alt="" />
       <img className="headerImagesM__wave headerImagesM__wave--purple--left" src="media/headerImage/wave--purple.png" alt="" />

@@ -3,13 +3,12 @@
 .headerNavM {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
-  height: 49px;
   width: 100%;
-
-  // overflow: hidden;
+  height: 49px;
+  padding: 9px 18px 5px 12px;
 
   &__mobileMenuOpener {
     display: flex;
@@ -26,8 +25,4 @@
   }
 
   background: #67AEFC;
-
-  &__links {
-    display: flex;
-  }
 }

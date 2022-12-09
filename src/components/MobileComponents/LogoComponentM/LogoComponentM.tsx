@@ -21,7 +21,18 @@ export const LogoComponentM = () => {
         />
       </div>
 
-      <p className="logoM__title">Developers</p>
+      <div className="logoM__titleContainer">
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/d.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/e.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/v.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/e.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/l.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/o.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/p.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/e.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/r.png" alt="dd" />
+        <img className="logoM__titleContainer__letter" src="media/logoImages/logoTitle/s.png" alt="dd" />
+      </div>
     </div>
   );
 };

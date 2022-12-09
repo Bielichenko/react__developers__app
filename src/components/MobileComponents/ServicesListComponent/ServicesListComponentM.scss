@@ -11,14 +11,21 @@
   background: #DAECFF;
 
   &__title {
+    width: 85%;
     max-width: 600px;
     margin-bottom: 17px;
 
     font-weight: 800;
-    font-size: 32px;
+    font-size: 23px;
+    line-height: 34px;
+
     text-align: center;
-    
+
     color: #111111;
+
+    // @include onDesktop {
+
+    // }
   }
 
   &__list {

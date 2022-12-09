@@ -1,90 +1,107 @@
-// .footerM {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   // justify-content: center;
+.footerM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-//   height: 600px;
-//   padding: 46px 49px 152px;
+  padding: 46px 46px 145px;
 
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 24px;
-//   color: #FFFFFF;
-//   background-color: rgba(100, 171, 249, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: rgba(100, 171, 249, 1);
 
-//   &__container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     // justify-content: center;
+  &__mainLogo {
+    transform: translate(-128px);
 
-//     width: 300px;
-//   }
+    margin-bottom: 28px;
+  }
 
-//   &__logo {
-//     margin-bottom: 28px;
-//   }
+  &__viberContacts {
+    margin-bottom: 60px;
+  }
 
-//   &__icons {
-//     display: flex;
-//     // justify-content: space-between;
+  &__icons {
+    display: flex;
+    margin-bottom: 40px;
 
-//     margin-bottom: 44px;
+    &__iconWrapper {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
 
-//     &__icon {
-//       &:not(:last-child) {
-//         margin-right: 25px;
-//       }
-//     }
-//   }
+    &__icon {
+      max-width: 32px;
+      height: 32px;
 
-//   &__email {
-//     margin-bottom: 23px;
+      &--large {
+        max-width: 35px;
+        height: 35px;
+      }
 
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 20px;
-//   }
+      &:hover {
+        filter: invert(100%);
+      }
+    }
+  }
 
+  &__email {
+    margin-bottom: 23px;
 
-//   &__convention {
-//     width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 
-//     text-align: center;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 140%;
-//   }
-// }
+    color: white;
+    text-decoration: none;
 
-// .viberContactsM {
-//   width: max-content;
-//   margin-bottom: 68px;
-
-//   &__item {
-//     display: flex;
-//     align-items: center;
-
-//     margin-bottom: 15px;
-
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 22px;
-//     color: #FFFFFF;
-
-//     &__image {
-//       width: 13.86px;
-//       height: 14.17px;
-
-//       margin-right: 17px;
+    &:hover {
+      filter: invert(100%);
+    }
+  }
 
 
-//     }
+  &__convention {
+    width: 100%;
 
-//     &__text {
-//       font-size: 16px;
-//       line-height: 22px;
-//     }
-//   }
-// }
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.viberContactsM {
+  // width: max-content;
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 17px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    &__icon {
+      width: 28px;
+      height: 29px;
+      margin-right: 24px;
+    }
+
+    &__phone {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: white;
+      text-decoration: none;
+    }
+
+    &:hover {
+      filter: invert(100%);
+    }
+  }
+}

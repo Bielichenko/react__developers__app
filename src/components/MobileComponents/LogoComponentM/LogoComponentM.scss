@@ -1,8 +1,13 @@
 .logoM {
   position: relative;
 
-  width: 130px;
-  height: 49px;
+  height: 35px;
+
+  transition: 100ms;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 
   &__item {
     position: absolute;
@@ -11,25 +16,25 @@
     width: 24px;
 
     &--left {
-      top: 9px;
+      top: 0;
       left: 0;
-      
+
       padding: 4px 10px 4px 4px;
-      
+
       background-image: url(../../../media/logoImages/back--left.png);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 24px 28px;
     }
 
     &--right {
-      top: 16px;
-      left: 20px;
+      bottom: 0;
+      left: 17px;
 
       padding: 4px 4px 4px 10px;
 
       background-image: url(../../../media/logoImages/back--right.png);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 24px 28px;
     }
 
     &__arrow {
@@ -38,13 +43,19 @@
     }
   }
 
-  &__title {
+  &__titleContainer {
     position: absolute;
-    top: 18px;
+    bottom: 13px;
     left: 45px;
+    display: flex;
 
-    color: white;
-    // font-weight: 700;
-    text-transform: uppercase;
+    &__letter {
+      width: 8px;
+      height: 9.5px;
+      
+      &:not(:last-child) {
+        margin-right: 2px;
+      }
+    }
   }
 }

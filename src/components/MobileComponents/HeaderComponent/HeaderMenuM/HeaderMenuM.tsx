@@ -12,7 +12,7 @@ interface props {
 
 export const HeaderMenuM: React.FC<props> = ({ isMenuOpened }) => {
   return (
-    <div className={cn({ headerMobMenu: true, 'headerMobMenu--opened': isMenuOpened })}>
+    <div className={cn('headerMobMenu', { 'headerMobMenu--opened': isMenuOpened })}>
       <nav className="headerMobMenu__links">
         <a href="#services" className="headerMobMenu__links__link">Услуги</a>
         <a href="#portfolio" className="headerMobMenu__links__link">Портфолио</a>

@@ -87,9 +87,7 @@ export const OrderComponentM = () => {
           <br />
           и мы поможем вам в их достижении
         </p>
-        {
-          requestWasSent ? <div className="p">Заявка была отправлена!</div> : null
-        }
+        <div className={cn('callRequestM', { 'callRequestM--active': requestWasSent })}> Спасибо, Ваша заявка была отправлена!</div>
         <form
           className="orderM__formBlock__form"
           noValidate
@@ -107,7 +105,7 @@ export const OrderComponentM = () => {
             value={userName}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--name': nameError })}>{nameError}</p>
+          <p className={cn('errorM', { 'errorM--active': nameError })}>{nameError}</p>
           <TextField
             className="form__input"
             onFocus={() => setPhoneError('')}
@@ -120,7 +118,7 @@ export const OrderComponentM = () => {
             value={userPhone}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--phone': phoneError })}>{phoneError}</p>
+          <p className={cn('errorM', { 'errorM--active': phoneError })}>{phoneError}</p>
           <TextField
             className="form__input"
             onFocus={() => setEmailError('')}
@@ -133,16 +131,16 @@ export const OrderComponentM = () => {
             value={userEmail}
             sx={inputStyles}
           />
-          <p className={cn('error', { 'error--email': emailError })}>{emailError}</p>
+          <p className={cn('errorM', { 'errorM--active': emailError })}>{emailError}</p>
           <button className="orderM__formBlock__orderButton" type="submit">Отправить</button>
         </form>
-        <div className="orderM__formBlock__imageContainer imageContainer">
-          <img src="media/orderImages/mobile/phoneCall.png" className="imageContainer__image imageContainer__image--phoneCall" alt="" />
-          <img src="media/orderImages/mobile/sphere--blue.png" className="imageContainer__image imageContainer__image--sphereBlue" alt="" />
-          <img src="media/orderImages/mobile/sphere--purple.png" className="imageContainer__image imageContainer__image--spherePurple" alt="" /> 
-          <img src="media/orderImages/mobile/mobile.png" className="imageContainer__image imageContainer__image--mobile" alt="" />
-        </div>
+      </div>
+      <div className="orderM__imageContainer imageContainerM">
+        <img src="media/orderImages/mobile/phoneCall.png" className="imageContainerM__image imageContainerM__image--phoneCall" alt="" />
+        <img src="media/orderImages/mobile/sphere--blue.png" className="imageContainerM__image imageContainerM__image--sphere--blue" alt="" />
+        <img src="media/orderImages/mobile/sphere--purple.png" className="imageContainerM__image imageContainerM__image--sphere--purple" alt="" />
+        <img src="media/orderImages/mobile/mobile.png" className="imageContainerM__image imageContainerM__image--mobile" alt="" />
       </div>
     </div>
-  );  
+  );
 };

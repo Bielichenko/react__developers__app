@@ -1,11 +1,11 @@
 @import '../../../../utils/styles/mixins/flexCenter.scss';
+@import '../../../../utils/styles/mixins/onTablet';
 
 .serviceItemM {
-  // min-width: 260px;
   margin-bottom: 10px;
 
   background: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 10px;
 
   cursor: pointer;
 
@@ -22,7 +22,9 @@
 
   &__container {
     @include flexCenter;
-    // flex-direction: row;
+    align-items: start;
+
+    width: max-content;
   }
 
   &__top {
@@ -31,7 +33,6 @@
     align-items: center;
     justify-content: space-between;
 
-    height: 61px;
     padding: 14px 24px 17px 24px;
 
 
@@ -44,23 +45,37 @@
       border-radius: 50%;
 
       transition: 800ms;
+      transform: translateY(50%);
 
       &--opened {
-        background: #67AEFC;
+        background-color: #67AEFC;
       }
     }
 
     &__title {
+      max-width: 200px;
+
       font-weight: 400;
       font-size: 17px;
       line-height: 30px;
       color: #111111;
+
+      &--bold {
+        font-weight: 800;
+        line-height: 27px;
+      }
+
+      @include onTablet {
+        max-width: max-content;
+      }
     }
 
     &__arrow {
       height: 13px;
 
       transition: 300ms;
+
+
 
       &--opened {
         transform: rotate(180deg);
@@ -75,6 +90,9 @@
 
     padding: 19px 41px 46px 32px;
 
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 175%;
     background: #FFFFFF;
     border-radius: 0px 0px 15px 15px;
 
@@ -101,7 +119,7 @@
   position: relative;
 
   height: 0px;
-  
+
   overflow: hidden;
   background: #DAECFF;
 

@@ -1,4 +1,5 @@
 @import '../../../utils/styles/mixins/orderButton.scss';
+@import '../../../utils/styles/blocks/formStylesM.scss';
 
 .orderM {
   position: relative;
@@ -7,7 +8,7 @@
   align-items: center;
 
   // height: 801px;
-  padding: 42px 20px 25px;
+  padding: 42px 20px 0px;
 
   background-color: #DAECFF;
 
@@ -17,19 +18,17 @@
     align-items: center;
 
     &__title {
-      margin-bottom: 10px;
+      margin-bottom: 17px;
 
       font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 23px;
+      line-height: 34px;
     }
 
     &__text {
-      margin-bottom: 27px;
-
       font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
+      font-size: 17px;
+      line-height: 30px;
       text-align: center;
     }
 
@@ -48,85 +47,56 @@
       height: 60px;
     }
   }
+
+  // &__imageContainer {
+
+  // }
+
 }
 
-
-.imageContainer {
+.imageContainerM {
   position: relative;
 
-  width: 100%;
+  width: 375px;
   height: 358px;
 
   &__image {
     position: absolute;
 
     &--phoneCall {
-      top: 155px;
+      z-index: 1;
+      bottom: 25px;
       left: 162px;
-
-      width: 111px;
-      height: 145px;
-
-      transform: rotate(-8.9deg);
     }
 
-    &--sphereBlue {
-      top: 105px;
-      left: 58px;
+    &--sphere {
+      &--blue {
+        bottom: 189px;
+        left: 58px;
 
-      width: 65px;
-      height: 65px;
+        width: 65px;
+        height: 65px;
+      }
 
-      transform: rotate(3.22deg);
-    }
+      &--purple {
+        bottom: 250px;
+        left: 275px;
 
-    &--spherePurple {
-      top: 88px;
-      left: 275px;
+        width: 20px;
+        height: 20px;
 
-      width: 20px;
-      height: 20px;
-
-      transform: rotate(3.22deg);
+        transform: rotate(3.22deg);
+      }
     }
 
     &--mobile {
-      top: 42px;
-      left: 61px;
+      bottom: 74px;
+      left: 81px;
 
       width: 172px;
       height: 242px;
 
-      transform: rotate(-7.91deg);
+      transform: rotate(-1deg);
     }
   }
 }
-
-// .error {
-//   position: absolute;
-
-//   visibility: hidden;
-//   font-size: 12px;
-//   color: red;
-
-//   &--name {
-//     top: 240px;
-//     left: 50;
-
-//     visibility: visible;
-//   }
-
-//   &--phone {
-//     top: 317px;
-//     left: 50;
-
-//     visibility: visible;
-//   }
-
-//   &--email {
-//     top: 392px;
-//     left: 50;
-
-//     visibility: visible;
-//   }
-// }

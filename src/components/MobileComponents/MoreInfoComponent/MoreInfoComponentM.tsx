@@ -27,9 +27,9 @@ export const MoreInfoComponentM = () => {
           За выгодную цену и короткий период времени, он поможет
           визуализировать ваш веб проект.
         </p>
-        <button type="button" className="moreInfoM__transferToOrder">
-          Оставить заявку
-        </button>
+        <a href="#order" className="moreInfoM__transferToOrder">
+        Оставить заявку
+        </a>
       </div>
     </div>
   );

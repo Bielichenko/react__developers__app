@@ -8,7 +8,13 @@
       top: 35px;
       right: 0;
 
+      width: 184px;
       height: 253px;
+
+      @include onTablet {
+        width: calc(184px + 150px);
+        height: 270px;
+      }
     }
 
     &--green {
@@ -21,13 +27,15 @@
 
   &__cart {
     position: absolute;
-    top: 20px;
-    right: 84px;
+    top: 50px;
+    right: 60px;
 
-    height: 204px;
+    width: 255px;
+
+    transform: rotate(15deg);
 
     @include onTablet {
-      height: 300px;
+      right: calc(60px + 150px)
     }
   }
 
@@ -35,18 +43,33 @@
     position: absolute;
 
     &--blue {
-      top: 160px;
+      top: 166px;
       right: 50px;
 
       height: 24px;
+
+      @include onTablet {
+        right: calc(50px + 150px)
+      }
     }
 
     &--purple {
       z-index: -1;
-      top: 271px;
+      top: 275px;
       right: 24px;
 
       height: 26px;
+
+      @include onTablet {
+        right: calc(24px + 150px)
+      }
+
+      &--small {
+        top: 560px;
+        right: 41px;
+        
+        width: 15px;
+      }
     }
   }
 
@@ -59,19 +82,31 @@
       right: 245px;
 
       height: 28px;
+
+      @include onTablet {
+        right: calc(245px + 150px)
+      }
     }
 
     &--purple {
       top: 109px;
       right: 41px;
 
-      height: 33px;
+      width: 91px;
+
+      @include onTablet {
+        right: calc(41px + 150px)
+      }
 
       &--left {
         top: 237px;
-        right: 300px;
+        right: 310px;
 
-        height: 26px;
+        width: 67px;
+
+        @include onTablet {
+          right: calc(310px + 150px)
+        }
       }
     }
   }
@@ -84,6 +119,10 @@
       right: 184px;
 
       height: 22px;
+
+      @include onTablet {
+        right: calc(184px + 150px)
+      }
     }
 
     &--pink {
@@ -91,6 +130,10 @@
       right: 60px;
 
       height: 35px;
+
+      @include onTablet {
+        right: calc(60px + 150px)
+      }
     }
   }
 }

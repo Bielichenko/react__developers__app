@@ -15,7 +15,7 @@ export const findPhoneError = (userInput: string) => {
     return 'Номер должен состоять из индекса страны и цифр. Пример: +380123456789';
   }
 
-  if (userInput.length < 11) {
+  if (userInput.length < 10) {
     return 'Номер должен содержать более 10 символов, не забудьте указать индекс вашей страны';
   }
 
