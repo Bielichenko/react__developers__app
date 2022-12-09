@@ -5,24 +5,14 @@ $CARD__HEIGHT: 615px;
 
 .stageCardM {
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: start;
-
-  padding: 27px 29px 0 33px;
 
   width: $CARD__WIDTH;
   height: $CARD__HEIGHT;
-
+  padding: 27px 29px 0 33px;
   margin-right: 25px;
 
   border: 2px solid #67AEFC;
   border-radius: 15px;
-
-  // background-image: url(../../../../media/stagesImages/rectangle--big.png);
-  // background-size: $CARD__WIDTH $CARD__HEIGHT;
-  // background-repeat: no-repeat;
 
   &__textContainer {
     &__title {
@@ -81,7 +71,6 @@ $CARD__HEIGHT: 615px;
 
     &--1 {
       //cylinder
-
       bottom: 48px;
       left: 175px;
 
@@ -93,7 +82,6 @@ $CARD__HEIGHT: 615px;
 
     &--2 {
       //cylinder--purple
-
       bottom: 55px;
       left: 64px;
 
@@ -105,11 +93,9 @@ $CARD__HEIGHT: 615px;
 
     &--3 {
       //mobile
-
       bottom: 47px;
       left: 79px;
 
-      // width: 127px;
       height: 190px;
 
       transform: rotate(-1deg);
@@ -117,7 +103,6 @@ $CARD__HEIGHT: 615px;
 
     &--4 {
       //sphere--big
-
       bottom: 230px;
       left: 85px;
 
@@ -127,7 +112,6 @@ $CARD__HEIGHT: 615px;
 
     &--5 {
       //sphere--small
-
       bottom: 155px;
       left: 250px;
 
@@ -137,13 +121,11 @@ $CARD__HEIGHT: 615px;
 
     &--6 {
       //wave
-
       z-index: -1;
       bottom: 170px;
       left: 190px;
 
       width: 96px;
-      // height: 40px;
       transform: rotate(-1deg);
     }
   }
@@ -151,7 +133,6 @@ $CARD__HEIGHT: 615px;
   &--content {
     &--0 {
       //deposit--big
-
       bottom: 169px;
       left: 248px;
 
@@ -161,7 +142,6 @@ $CARD__HEIGHT: 615px;
 
     &--1 {
       //deposit--small
-
       bottom: 52px;
       left: 175px;
 
@@ -171,7 +151,6 @@ $CARD__HEIGHT: 615px;
 
     &--2 {
       //plus--big
-
       z-index: 1;
       bottom: 60px;
       left: 187px;
@@ -182,7 +161,6 @@ $CARD__HEIGHT: 615px;
 
     &--3 {
       //plus--small
-
       bottom: 209px;
       left: 81px;
 
@@ -192,7 +170,6 @@ $CARD__HEIGHT: 615px;
 
     &--4 {
       //sphere--purple
-
       bottom: 123px;
       left: 76px;
 
@@ -202,7 +179,6 @@ $CARD__HEIGHT: 615px;
 
     &--5 {
       //wallet
-
       bottom: 68px;
       left: 94px;
 
@@ -212,7 +188,6 @@ $CARD__HEIGHT: 615px;
 
     &--6 {
       //wave
-
       bottom: 64px;
       left: 36px;
 

@@ -1,8 +1,5 @@
-/* eslint-disable max-len */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import cn from 'classnames';
-
 import { IService } from '../../../../types/IService';
 
 import './ServiceItemM.scss';

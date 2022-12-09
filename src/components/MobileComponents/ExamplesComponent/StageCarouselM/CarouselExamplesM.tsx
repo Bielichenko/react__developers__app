@@ -1,19 +1,13 @@
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, {
   useState,
-  Children,
   useEffect,
-  cloneElement,
 } from 'react';
-
-import './CarouselExamplesM.scss';
-
 import { shops } from '../shops';
 import { ShopCardM } from '../ExamplesShopCardM/ShopCardM';
 
-const STAGE__WIDTH = 335;
+import './CarouselExamplesM.scss';
+
+const CARD__WIDTH = 335;
 const MARGIN__WIDTH = 20;
 
 export const CarouselExamplesM = () => {
@@ -21,14 +15,14 @@ export const CarouselExamplesM = () => {
   const [cardsPassed, setCardsPassed] = useState(0);
 
   useEffect(() => {
-    setOffset(cardsPassed * (STAGE__WIDTH + MARGIN__WIDTH));
+    setOffset(cardsPassed * (CARD__WIDTH + MARGIN__WIDTH));
   }, [cardsPassed]);
 
-  const goLeft = () => {
+  const leftButtonHandler = () => {
     setCardsPassed(cardsPassed - 1);
   };
 
-  const goRight = () => {
+  const rightButtonHandler = () => {
     setCardsPassed(cardsPassed + 1);
   };
 
@@ -50,8 +44,8 @@ export const CarouselExamplesM = () => {
           ? (
             <div
               className="arrowsContainerM__arrowButton arrowsContainerM__arrowButton--left"
-              onClick={() => goLeft()}
-              onKeyDown={() => goLeft()}
+              onClick={() => leftButtonHandler()}
+              onKeyDown={() => leftButtonHandler()}
               role="button"
               tabIndex={0}
             >
@@ -68,8 +62,8 @@ export const CarouselExamplesM = () => {
           ? (
             <div
               className="arrowsContainerM__arrowButton arrowsContainerM__arrowButton--right"
-              onClick={() => goRight()}
-              onKeyDown={() => goRight()}
+              onClick={() => rightButtonHandler()}
+              onKeyDown={() => rightButtonHandler()}
               role="button"
               tabIndex={0}
             >

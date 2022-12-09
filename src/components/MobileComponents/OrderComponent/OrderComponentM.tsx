@@ -1,14 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable*/
+import React, { useState } from 'react';
 import cn from 'classnames';
-
-import { TextField, Box } from '@material-ui/core';
-import React, { FormEventHandler, useState } from 'react';
-// import TextField from '@material-ui/core/TextField';
+import { TextField } from '@material-ui/core';
+import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
 
 import './OrderComponentM.scss';
-import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
 import inputStyles from '../../../utils/styles/blocks/inputStyles';
 
 export const OrderComponentM = () => {
@@ -48,12 +43,6 @@ export const OrderComponentM = () => {
     setPhoneError(findPhoneError(userPhone));
     setEmailError(findEmailError(userEmail));
   };
-
-  // const removeFormErrors = () => {
-  //   setNameError('');
-  //   setPhoneError('');
-  //   setEmailError('');
-  // };
 
   const isFormValid = () => {
     if (!findNameError(userName) && !findPhoneError(userPhone) && !findEmailError(userEmail)) {
@@ -132,7 +121,7 @@ export const OrderComponentM = () => {
             sx={inputStyles}
           />
           <p className={cn('errorM', { 'errorM--active': emailError })}>{emailError}</p>
-          <button className="orderM__formBlock__orderButton" type="submit">Отправить</button>
+          <button className="orderButtonM" type="submit">Отправить</button>
         </form>
       </div>
       <div className="orderM__imageContainer imageContainerM">

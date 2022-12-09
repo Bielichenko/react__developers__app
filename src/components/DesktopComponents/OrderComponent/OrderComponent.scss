@@ -1,6 +1,4 @@
-@import '../../../utils/styles/mixins/orderButton.scss';
 @import '../../../utils/styles/mixins/onSmallDesktop';
-@import '../../../utils/styles/blocks/formStyles.scss';
 
 .order {
   position: relative;
@@ -38,16 +36,8 @@
     &__form {
       display: flex;
       flex-direction: column;
+
       width: 470px;
-    }
-
-    &__orderButton {
-      @include orderButton;
-
-      align-self: center;
-
-      width: 270px;
-      height: 60px;
     }
   }
 

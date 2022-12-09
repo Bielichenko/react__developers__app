@@ -1,13 +1,9 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable brace-style */
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Media from 'react-media';
 import { DesktopVersion } from './components/DesktopComponents/DesktopVersion';
+import { MobileVersion } from './components/MobileComponents/MobileVersion';
 
 import './App.scss';
-import { MobileVersion } from './components/MobileComponents/MobileVersion';
 
 export const App: React.FC = () => {
   return (

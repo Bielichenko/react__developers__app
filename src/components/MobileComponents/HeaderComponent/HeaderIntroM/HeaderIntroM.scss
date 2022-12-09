@@ -1,6 +1,3 @@
-@import '../../../../utils/styles/mixins/orderButton.scss';
-@import '../../../../utils/styles/mixins/_onTablet.scss';
-
 .headerIntroM {
   position: relative;
   display: flex;
@@ -33,15 +30,5 @@
 
       color: #000000;
     }
-
-    &__orderButton {
-      @include orderButton;
-
-      border-radius: 10px;
-
-      height: 60px;
-      width: 335px;
-    }
   }
-
 }

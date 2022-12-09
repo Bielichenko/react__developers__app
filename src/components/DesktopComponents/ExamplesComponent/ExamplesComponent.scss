@@ -8,12 +8,11 @@
   justify-content: center;
   align-items: center;
 
-  // height: 1749px;
   padding: 121px 25px;
 
   background-color: rgba(218, 236, 255, 1);
 
-  &__container {
+  &__limitContainer {
     @include limitContainer;
 
     flex-direction: column;

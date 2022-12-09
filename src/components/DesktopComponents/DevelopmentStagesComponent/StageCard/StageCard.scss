@@ -93,7 +93,6 @@
 
       @include onSmallDesktop {
         z-index: 1;
-        // top: 170px;
         right: calc(120px*0.7);
 
         width: calc(130px*0.9);
@@ -150,7 +149,6 @@
       transform: rotate(-1deg);
 
       @include onSmallDesktop {
-        // top: calc(75px*2);
         right: calc(97px*0.7);
 
         width: calc(144px*0.9);
@@ -166,7 +164,6 @@
       width: 39px;
 
       @include onSmallDesktop {
-        // top: 120px;
         right: 140px;
 
         width: calc(39px*0.9);
@@ -181,7 +178,6 @@
       width: 18px;
 
       @include onSmallDesktop {
-        // top: 200px;
         right: calc(62px*0.7);
 
         width: calc(18px*0.9);
@@ -195,7 +191,6 @@
       right: 39px;
 
       width: 109px;
-      // height: 45px;
 
       transform: rotate(-1deg);
 
@@ -205,7 +200,6 @@
         right: calc(39px*0.7);
 
         width: calc(109px*0.9);
-        // height: calc(45px*0.9);
       }
     }
   }

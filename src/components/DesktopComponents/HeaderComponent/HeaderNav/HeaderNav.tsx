@@ -15,7 +15,7 @@ export const HeaderNav = () => {
           <a href="#portfolio" className="headerNav__links__link">Портфолио</a>
           <a href="#stages" className="headerNav__links__link">Этапы</a>
           <a href="#footer" className="headerNav__links__link">Дизайнеры</a>
-          <a href="#order" className="headerNav__links__link headerNav__links__link--order">Заказать</a>
+          <a href="#order" className="orderButton--small">Заказать</a>
         </nav>
       </div>
     </div>

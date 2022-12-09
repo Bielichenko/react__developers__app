@@ -1,4 +1,3 @@
-/* eslint-disable no-trailing-spaces */
 import React from 'react';
 import { HeaderImagesM } from '../HeaderImagesM/HeaderImagesM';
 import { HeaderMenuM } from '../HeaderMenuM/HeaderMenuM';
@@ -27,7 +26,7 @@ export const HeaderIntroM: React.FC<props> = ({ isMenuOpened }) => {
           до пользовательского интерфейса в сжатые сроки
           с командой Virtual Designers
         </p>
-        <a href="#order" className="headerIntroM__textBlock__orderButton">
+        <a href="#order" className="orderButtonM">
           Заказать
         </a>
       </div>

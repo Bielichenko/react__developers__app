@@ -8,7 +8,7 @@ import './ServicesListComponent.scss';
 export const ServicesListComponent = () => {
   return (
     <div className="servicesList" id="services">
-      <div className="servicesList__container">
+      <div className="servicesList__limitContainer">
         <h2 className="servicesList__title">
           Что входит в услугу по созданию дизайна интернет-магазина?
           <img

@@ -1,13 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-console */
+import React, { useState } from 'react';
 import cn from 'classnames';
-
-import { TextField, Box } from '@material-ui/core';
-import React, { FormEventHandler, useState } from 'react';
-// import TextField from '@material-ui/core/TextField';
+import { TextField } from '@material-ui/core';
+import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
 
 import './OrderComponent.scss';
-import { findEmailError, findNameError, findPhoneError } from '../../../utils/functions/formValidators';
 import inputStyles from '../../../utils/styles/blocks/inputStyles';
 
 export const OrderComponent = () => {
@@ -47,12 +43,6 @@ export const OrderComponent = () => {
     setPhoneError(findPhoneError(userPhone));
     setEmailError(findEmailError(userEmail));
   };
-
-  // const removeFormErrors = () => {
-  //   setNameError('');
-  //   setPhoneError('');
-  //   setEmailError('');
-  // };
 
   const isFormValid = () => {
     if (!findNameError(userName) && !findPhoneError(userPhone) && !findEmailError(userEmail)) {
@@ -133,7 +123,7 @@ export const OrderComponent = () => {
             sx={inputStyles}
           />
           <p className={cn('error', { 'error--active': emailError })}>{emailError}</p>
-          <button className="order__formBlock__orderButton" type="submit">Отправить</button>
+          <button className="orderButton orderButton--center" type="submit">Отправить</button>
         </form>
       </div>
       <img src="media/orderImages/phoneCall.png" className="order__image order__image--phone" alt="" />

@@ -1,6 +1,9 @@
-html {
-  scroll-behavior: smooth;
-}
+@import './utils/styles/blocks/orderButton.scss';
+@import './utils/styles/blocks/orderButtonM.scss';
+@import './utils/styles/blocks/formStyles.scss';
+@import './utils/styles/blocks/formStylesM.scss';
+@import './utils/styles/blocks/arrowsButton.scss';
+@import './utils/styles/blocks/arrowsButtonM.scss';
 
 .app {
   min-width: 335px;

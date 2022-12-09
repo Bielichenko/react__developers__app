@@ -1,5 +1,3 @@
-@import '../../../../utils/styles/mixins/orderButton.scss';
-
 .headerNavM {
   position: relative;
   display: flex;
@@ -12,8 +10,9 @@
 
   &__mobileMenuOpener {
     display: flex;
-    width: 49px;
     justify-content: space-between;
+
+    width: 49px;
 
     &__elipse {
       width: 13px;
@@ -24,5 +23,5 @@
     }
   }
 
-  background: #67AEFC;
+  background-color: #67AEFC;
 }

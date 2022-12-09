@@ -1,8 +1,7 @@
-/* eslint-disable no-console */
 import React from 'react';
+import { CarouselExamplesM } from './StageCarouselM/CarouselExamplesM';
 
 import './ExamplesComponentM.scss';
-import { CarouselExamplesM } from './StageCarouselM/CarouselExamplesM';
 
 export const ExamplesComponentM = () => {
   return (

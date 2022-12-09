@@ -1,11 +1,5 @@
-/* eslint-disable no-console */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import React from 'react';
 import { LogoComponentM } from '../../LogoComponentM/LogoComponentM';
-import { HeaderMenuM } from '../HeaderMenuM/HeaderMenuM';
 
 import './HeaderNavM.scss';
 
@@ -22,8 +16,11 @@ export const HeaderNavM: React.FC<props> = ({ isMenuOpened, setIsMenuOpened }) =
       </div>
 
       <div
+        role="button"
         className="headerNavM__mobileMenuOpener"
         onClick={() => setIsMenuOpened(!isMenuOpened)}
+        onKeyUp={() => setIsMenuOpened(!isMenuOpened)}
+        tabIndex={0}
       >
         <div className="headerNavM__mobileMenuOpener__elipse"></div>
         <div className="headerNavM__mobileMenuOpener__elipse"></div>

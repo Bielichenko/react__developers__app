@@ -1,7 +1,6 @@
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { IStage } from '../../../../types/IStage';
+
 import './StageCardM.scss';
 
 interface props {

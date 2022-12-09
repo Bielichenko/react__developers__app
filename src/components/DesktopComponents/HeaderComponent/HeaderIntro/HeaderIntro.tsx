@@ -6,7 +6,7 @@ import './HeaderIntro.scss';
 export const HeaderIntro = () => {
   return (
     <div className="headerIntro">
-      <div className="headerIntro__container">
+      <div className="headerIntro__limitContainer">
         <div className="headerIntro__textBlock">
           <h1 className="headerIntro__textBlock__title">
             Разработка
@@ -24,7 +24,7 @@ export const HeaderIntro = () => {
             <br />
             с командой Virtual Designers
           </p>
-          <a href="#order" className="headerIntro__textBlock__orderButton">
+          <a href="#order" className="orderButton">
             Заказать
           </a>
         </div>

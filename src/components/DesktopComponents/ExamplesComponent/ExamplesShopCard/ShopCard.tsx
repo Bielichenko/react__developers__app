@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/quotes */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import { IShop } from '../../../../types/IShop';
 

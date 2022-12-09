@@ -1,9 +1,6 @@
-/* eslint-disable max-len */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import cn from 'classnames';
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { LogoComponentM } from '../../LogoComponentM/LogoComponentM';
+import cn from 'classnames';
+
 import './HeaderMenuM.scss';
 
 interface props {

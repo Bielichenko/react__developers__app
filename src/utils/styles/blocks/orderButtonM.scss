@@ -1,0 +1,28 @@
+.orderButtonM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 335px;
+  height: 60px;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #75E169;
+  border: 2px solid #75E169;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #67AEFC;
+  }
+
+  &:active {
+    background-color: #67AEFC;
+  }
+}

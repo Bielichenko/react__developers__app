@@ -1,8 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable max-len */
 import React from 'react';
 import { CarouselM } from './StageCarouselM/CarouselM';
-// import Carousel from 'react-bootstrap/Carousel';
 
 import './DevelopmentStagesComponentM.scss';
 

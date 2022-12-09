@@ -1,5 +1,5 @@
-@import '../../../../utils/styles/mixins/orderButton.scss';
 @import '../../../../utils/styles/mixins/onSmallDesktop';
+@import '../../../../utils/styles/mixins/limitContainer';
 
 .headerIntro {
   position: relative;
@@ -11,13 +11,10 @@
   padding: 171px 25px 180px;
 
 
-  &__container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  &__limitContainer {
+    @include limitContainer;
 
-    width: 100%;
-    max-width: 1145px;
+    justify-content: start;
   }
 
   &__textBlock {
@@ -49,13 +46,6 @@
       @include onSmallDesktop {
         margin-bottom: 38px;
       }
-    }
-
-    &__orderButton {
-      @include orderButton;
-
-      height: 60px;
-      width: 270px;
     }
   }
 }

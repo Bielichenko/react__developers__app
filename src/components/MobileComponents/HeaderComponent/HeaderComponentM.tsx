@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-
 import { HeaderNavM } from './HeaderNavM/HeaderNavM';
+import { HeaderIntroM } from './HeaderIntroM/HeaderIntroM';
 
 import './HeaderComponentM.scss';
-import { HeaderIntroM } from './HeaderIntroM/HeaderIntroM';
 
 export const HeaderComponentM = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);

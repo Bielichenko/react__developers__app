@@ -10,9 +10,9 @@
 
   padding: 120px 20px;
 
-  background: #DAECFF;
+  background-color: #DAECFF;
 
-  &__container {
+  &__limitContainer {
     @include limitContainer;
 
     flex-direction: column;
@@ -24,7 +24,6 @@
     font-weight: 800;
     font-size: 32px;
     text-align: center;
-
     color: #111111;
   }
 
@@ -45,7 +44,6 @@
       right: 30px;
     }
     
-
     @media (max-width: 1500px) {
       display: none;
     }

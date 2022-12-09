@@ -1,9 +1,8 @@
 import React from 'react';
-
 import { HeaderNav } from './HeaderNav/HeaderNav';
+import { HeaderIntro } from './HeaderIntro/HeaderIntro';
 
 import './HeaderComponent.scss';
-import { HeaderIntro } from './HeaderIntro/HeaderIntro';
 
 export const HeaderComponent = () => {
   return (

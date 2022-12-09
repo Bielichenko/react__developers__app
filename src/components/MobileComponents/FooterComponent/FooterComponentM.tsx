@@ -1,8 +1,5 @@
-/* eslint-disable max-len */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { LogoComponent } from '../../DesktopComponents/LogoComponent/LogoComponent';
-import { LogoComponentM } from '../LogoComponentM/LogoComponentM';
 
 import './FooterComponentM.scss';
 

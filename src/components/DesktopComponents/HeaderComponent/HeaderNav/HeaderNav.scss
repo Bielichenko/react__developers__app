@@ -1,4 +1,3 @@
-@import '../../../../utils/styles/mixins/orderButton.scss';
 @import '../../../../utils/styles/vars/vars';
 @import '../../../../utils/styles/mixins/limitContainer';
 
@@ -35,13 +34,6 @@
 
       &:not(:last-child):hover {
         text-decoration: underline;
-      }
-
-      &--order {
-        @include orderButton--white;
-
-        width: 170px;
-        height: 38px;
       }
     }
   }

@@ -1,21 +1,14 @@
-/* eslint-disable prefer-const */
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, {
   useState,
-  Children,
   useEffect,
-  cloneElement,
   useRef,
 } from 'react';
-
-import './Carousel.scss';
-
 import { stages } from '../stages';
 import { StageCard } from '../StageCard/StageCard';
 
-const STAGE__HEIGHT = 389;
+import './Carousel.scss';
+
+const CARD__WIDTH = 389;
 const MARGIN__WIDTH = 25;
 
 export const Carousel = () => {
@@ -24,7 +17,7 @@ export const Carousel = () => {
   const [cardsPassed, setCardsPassed] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
-  const resize = () => {
+  const resizeHandler = () => {
     const { clientWidth } = ref.current || {};
 
     if (clientWidth) {
@@ -33,11 +26,11 @@ export const Carousel = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', resize);
-    resize();
+    window.addEventListener('resize', resizeHandler);
+    resizeHandler();
 
     return () => {
-      window.removeEventListener('resize', resize);
+      window.removeEventListener('resize', resizeHandler);
     };
   }, []);
 
@@ -45,11 +38,11 @@ export const Carousel = () => {
     setOffset(cardsPassed * (cardWidth + MARGIN__WIDTH));
   }, [cardsPassed, cardWidth]);
 
-  const goLeft = () => {
+  const leftButtonHandler = () => {
     setCardsPassed(Math.max(0, cardsPassed - 1));
   };
 
-  const goRight = () => {
+  const rightButtonHandler = () => {
     setCardsPassed(Math.min(stages.length - 2, cardsPassed + 1));
   };
 
@@ -69,7 +62,7 @@ export const Carousel = () => {
                   <StageCard
                     stage={stage}
                     stageCardWidth={`${cardWidth}px`}
-                    stageCardHeight={`${STAGE__HEIGHT}px`}
+                    stageCardHeight={`${CARD__WIDTH}px`}
                   />
                 </React.Fragment>
               );
@@ -82,8 +75,8 @@ export const Carousel = () => {
           ? (
             <div
               className="arrowsContainer__arrowButton arrowsContainer__arrowButton--left"
-              onClick={() => goLeft()}
-              onKeyDown={() => goLeft()}
+              onClick={() => leftButtonHandler()}
+              onKeyDown={() => leftButtonHandler()}
               role="button"
               tabIndex={0}
             >
@@ -100,8 +93,8 @@ export const Carousel = () => {
           ? (
             <div
               className="arrowsContainer__arrowButton arrowsContainer__arrowButton--right"
-              onClick={() => goRight()}
-              onKeyDown={() => goRight()}
+              onClick={() => rightButtonHandler()}
+              onKeyDown={() => rightButtonHandler()}
               role="button"
               tabIndex={0}
             >

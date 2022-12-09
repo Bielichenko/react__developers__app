@@ -1,14 +1,13 @@
-/* eslint-disable no-console */
 import React from 'react';
 import { ShopCard } from './ExamplesShopCard/ShopCard';
+import { shops } from './shops';
 
 import './ExamplesComponent.scss';
-import { shops } from './shops';
 
 export const ExamplesComponent = () => {
   return (
     <div className="examples" id="portfolio">
-      <div className="examples__container">
+      <div className="examples__limitContainer">
         <h2 className="examples__title">
           Примеры онлайн-магазинов
         </h2>
