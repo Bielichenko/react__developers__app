@@ -51,7 +51,7 @@ export const ServiceItem: React.FC<props> = ({ service }) => {
               {service.title}
             </h4>
           </div>
-          <img src="media/servicesImage/arrow--opened.png" alt="" className={cn('serviceItem__top__arrow', { 'serviceItem__top__arrow--opened': isOpened })} />
+          <img src="media/servicesImage/arrow.png" alt="" className={cn('serviceItem__top__arrow', { 'serviceItem__top__arrow--opened': isOpened })} />
         </div>
         <div className={cn('descriptionWrapper', { 'descriptionWrapper--opened': isWrapperActive })}>
           <div className={cn('serviceItem__description', { 'serviceItem__description--opened': isOpened })}>

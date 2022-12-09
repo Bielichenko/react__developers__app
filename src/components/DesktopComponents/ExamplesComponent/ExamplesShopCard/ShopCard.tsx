@@ -30,7 +30,7 @@ export const ShopCard: React.FC<props> = ({ shop }) => {
           <div
             className="shopCard"
             key={shop.id}
-            style={{ backgroundImage: `url(../../media/examplesImages/shopsImages/${shop.image})` }}
+            style={{ backgroundImage: `url(media/examplesImages/shopsImages/${shop.image})` }}
             onMouseEnter={() => setIsHovered(true)}
           >
           </div>

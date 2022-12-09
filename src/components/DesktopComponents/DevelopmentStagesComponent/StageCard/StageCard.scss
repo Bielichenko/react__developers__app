@@ -191,19 +191,21 @@
     &--6 {
       //wave
       z-index: -1;
-      top: 90px;
+      top: 80px;
       right: 39px;
 
       width: 109px;
-      height: 45px;
+      // height: 45px;
+
+      transform: rotate(-1deg);
 
       @include onSmallDesktop {
         z-index: -1;
-        top: 85px;
+        top: 75px;
         right: calc(39px*0.7);
 
         width: calc(109px*0.9);
-        height: calc(45px*0.9);
+        // height: calc(45px*0.9);
       }
     }
   }

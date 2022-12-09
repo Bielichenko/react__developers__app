@@ -114,8 +114,7 @@
 
   &__transferToOrder {
     @include orderButton;
-
-    border-radius: 5px;
+    width: 335px;
 
     border-radius: 10px;
   }
