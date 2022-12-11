@@ -40,7 +40,7 @@
     color: white;
     text-decoration: none;
 
-    transition: 300ms;
+    transition: 500ms;
 
     &:hover {
       filter: invert(100%);
@@ -64,7 +64,7 @@
     }
 
     &__icon {
-      transition: 300ms;
+      transition: 500ms;
   
       &:hover {
         filter: invert(100%);
@@ -81,7 +81,7 @@
 
     margin-bottom: 13px;
 
-    transition: 300ms;
+    transition: 500ms;
 
     &__icon {
       margin-right: 9px;

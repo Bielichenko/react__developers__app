@@ -83,7 +83,7 @@
     &--0 {
       //barcode
       z-index: 1;
-      top: 108px;
+      top: 128px;
       right: 130px;
 
       width: 130px;
@@ -93,7 +93,8 @@
 
       @include onSmallDesktop {
         z-index: 1;
-        right: calc(120px*0.7);
+        top: calc(108px + 40px);
+        right: 100px;
 
         width: calc(130px*0.9);
         height: calc(91px*0.9);
@@ -102,7 +103,7 @@
 
     &--1 {
       //cylinder
-      top: 230px;
+      top: 250px;
       right: 80px;
 
       width: 72px;
@@ -111,8 +112,8 @@
       transform: rotate(-1deg);
 
       @include onSmallDesktop {
-        top: 210px;
-        right: calc(80px*0.7);
+        top: 240px;
+        right: 50px;
 
         width: calc(72px*0.9);
         height: calc(69px*0.9);
@@ -121,16 +122,16 @@
 
     &--2 {
       //cylinder--purple
-      top: 245px;
+      top: 265px;
       right: 190px;
 
       width: 71px;
       height: 36px;
 
-      transform: rotate(-1deg);
+      transform: rotate(-0.3deg);
 
       @include onSmallDesktop {
-        top: 225px;
+        top: 270px;
         right: calc(210px*0.7);
 
         width: calc(71px*0.9);
@@ -140,7 +141,7 @@
 
     &--3 {
       //mobile
-      top: 75px;
+      top: 95px;
       right: 97px;
 
       width: 144px;
@@ -149,6 +150,7 @@
       transform: rotate(-1deg);
 
       @include onSmallDesktop {
+        top: calc(75px + 40px);
         right: calc(97px*0.7);
 
         width: calc(144px*0.9);
@@ -158,13 +160,14 @@
 
     &--4 {
       //sphere--big
-      top: 42px;
+      top: 62px;
       right: 200px;
 
       width: 39px;
 
       @include onSmallDesktop {
         right: 140px;
+        top: calc(42px + 40px);
 
         width: calc(39px*0.9);
       }
@@ -172,12 +175,13 @@
 
     &--5 {
       //sphere--small
-      top: 159px;
+      top: 179px;
       right: 62px;
 
       width: 18px;
 
       @include onSmallDesktop {
+        top: 175px;
         right: calc(62px*0.7);
 
         width: calc(18px*0.9);
@@ -187,7 +191,7 @@
     &--6 {
       //wave
       z-index: -1;
-      top: 80px;
+      top: 100px;
       right: 39px;
 
       width: 109px;
@@ -196,7 +200,7 @@
 
       @include onSmallDesktop {
         z-index: -1;
-        top: 75px;
+        top: 110px;
         right: calc(39px*0.7);
 
         width: calc(109px*0.9);
@@ -213,7 +217,7 @@
       width: 27px;
 
       @include onSmallDesktop {
-        top: 135px;
+        top: 165px;
         right: calc(69px*0.7);
 
         width: calc(19px*0.9);
@@ -229,7 +233,7 @@
       width: 24px;
 
       @include onSmallDesktop {
-        top: 210px;
+        top: 255px;
         right: calc(130px*0.7);
 
         width: calc(17px*0.9);
@@ -246,7 +250,7 @@
 
       @include onSmallDesktop {
         z-index: 1;
-        top: 165px;
+        top: 205px;
         right: calc(58px*0.7);
 
         width: calc(69px*0.9);
@@ -261,7 +265,7 @@
       width: 50px;
 
       @include onSmallDesktop {
-        top: 104px;
+        top: calc(104px + 40px);
         right: calc(214px*0.7);
 
         width: calc(35px*0.9);
@@ -269,14 +273,14 @@
     }
 
     &--4 {
-      //sphere--purple
+      //sphere--pink
       top: 201px;
       right: 231px;
 
       width: 38px;
 
       @include onSmallDesktop {
-        top: 180px;
+        top: 215px;
         right: calc(220px*0.7);
 
         width: calc(27px*0.9);
@@ -291,7 +295,7 @@
       width: 131px;
 
       @include onSmallDesktop {
-        top: 120px;
+        top: calc(120px + 40px);
         right: calc(120px*0.7);
 
         width: calc(92px*0.9);
@@ -306,7 +310,7 @@
       width: 100px;
 
       @include onSmallDesktop {
-        top: 210px;
+        top: 245px;
         right: calc(208px*0.7);
 
         width: calc(70px*0.9);
@@ -323,7 +327,7 @@
       width: 60px;
 
       @include onSmallDesktop {
-        top: 75px;
+        top: 110px;
         right: calc(190px*0.7);
 
         width: calc(60px*0.9);
@@ -340,7 +344,7 @@
       transform: rotate(3.04deg);
 
       @include onSmallDesktop {
-        top: 106px;
+        top: calc(82px + 60px);
         right: calc(14px*0.7);
 
         width: calc(175px*0.9);
@@ -350,14 +354,14 @@
     &--2 {
       //sphere
       top: 127px;
-      right: 224px;
+      right: 230px;
 
       width: 39px;
 
       transform: rotate(15.72deg);
 
       @include onSmallDesktop {
-        top: 140px;
+        top: 165px;
         right: calc(200px*0.7);
 
         width: calc(39px*0.9);

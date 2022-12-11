@@ -8,7 +8,7 @@
 
 
   cursor: pointer;
-  transition: 300ms;
+  transition: 500ms;
 
   &:hover {
     background-color: rgb(233, 242, 244);
@@ -38,7 +38,7 @@
       background: #75E169;
       border-radius: 50%;
 
-      transition: 800ms;
+      transition: 500ms;
 
       &--opened {
         background: #67AEFC;
@@ -52,6 +52,8 @@
 
       color: #111111;
 
+      transition: 500ms;
+
       &--bold {
         font-weight: 700;
         font-size: 21px;
@@ -62,7 +64,7 @@
     &__arrow {
       height: 13px;
 
-      transition: 300ms;
+      transition: 500ms;
 
       &--opened {
         transform: rotate(180deg);

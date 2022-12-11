@@ -9,8 +9,8 @@ export const HeaderComponentM = () => {
 
   return (
     <div className="header">
-      <HeaderNavM setIsMenuOpened={setIsMenuOpened} isMenuOpened={isMenuOpened} />
-      <HeaderIntroM isMenuOpened={isMenuOpened} />
+      <HeaderNavM isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
+      <HeaderIntroM isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
     </div>
   );
 };

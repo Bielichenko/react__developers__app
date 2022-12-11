@@ -21,7 +21,9 @@ export const Carousel = () => {
     const { clientWidth } = ref.current || {};
 
     if (clientWidth) {
-      setCardWidth(clientWidth * 0.485);
+      const properCardWidth = (clientWidth - MARGIN__WIDTH) / 2;
+
+      setCardWidth(properCardWidth);
     }
   };
 

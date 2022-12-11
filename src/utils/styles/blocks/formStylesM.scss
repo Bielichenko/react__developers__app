@@ -1,12 +1,12 @@
 .errorM {
     width: 100%;
-    min-height: 10px;
-    padding: 3px;
+    min-height: 15px;
+    padding: 2px;
     
     visibility: hidden;
     color: red;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 11px;
+    line-height: 11px;
   
     &--active {
       visibility: visible;

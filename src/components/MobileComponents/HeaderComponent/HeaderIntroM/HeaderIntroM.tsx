@@ -6,9 +6,10 @@ import './HeaderIntroM.scss';
 
 interface props {
   isMenuOpened: boolean;
+  setIsMenuOpened: (boolean: boolean) => void;
 }
 
-export const HeaderIntroM: React.FC<props> = ({ isMenuOpened }) => {
+export const HeaderIntroM: React.FC<props> = ({ isMenuOpened, setIsMenuOpened }) => {
   return (
     <div className="headerIntroM">
       <HeaderImagesM />
@@ -30,7 +31,7 @@ export const HeaderIntroM: React.FC<props> = ({ isMenuOpened }) => {
           Заказать
         </a>
       </div>
-      <HeaderMenuM isMenuOpened={isMenuOpened} />
+      <HeaderMenuM isMenuOpened={isMenuOpened} setIsMenuOpened={setIsMenuOpened} />
     </div>
   );
 };
