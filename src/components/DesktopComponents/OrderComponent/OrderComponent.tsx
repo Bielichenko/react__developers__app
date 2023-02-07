@@ -95,6 +95,7 @@ export const OrderComponent = () => {
             error={!!nameError}
             value={userName}
             sx={inputStyles}
+            type="text"
           />
           <p className={cn('error', { 'error--active': nameError })}>{nameError}</p>
           <TextField
